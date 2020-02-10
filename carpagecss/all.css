@@ -42,6 +42,7 @@ h3 {
 }
 
 #ham-menu {
+    margin-right: 30px;
 }
 
 .carscroll {
@@ -163,4 +164,12 @@ h3 {
     width: 400px;
     background-color: brown;
     align-self: flex-end;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
