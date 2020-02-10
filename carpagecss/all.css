@@ -68,11 +68,21 @@ h3 {
 }
 
 #scroll4 {
-    background-color: forestgreen;
+    background-image: url(../images/car1back4.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #scroll5 {
     background-color: thistle;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 #scroll6 {
@@ -124,4 +134,33 @@ h3 {
 
 .symbol {
     width: 20vw;
+}
+
+.cap {
+    width: 20vw;
+}
+
+#safeinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 80vh;
+    background-color: aqua;
+    align-self: ;
+}
+
+#shield {
+    margin-left: 160px;
+    width: 45vw;
+    height: 80vh;
+    background-color: aqua;
+}
+
+#placehold {
+    height: 400px;
+    width: 400px;
+    background-color: brown;
+    align-self: flex-end;
 }

@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+#navbar {
+    width: 100vw;
+    height: 100px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-pos {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+}
