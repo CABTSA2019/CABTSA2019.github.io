@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="carpagecss/all.css">
-    <script src="scripts/allscript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/animations.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+   <div id="dimmer"></div>
     <div id="nav-pos">
+    <div id="nav-cont">
+        <div id="clickham">
+            <img src="images/blackham.png" id="ham">
+        </div>
     <div id="ham-menu">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+        <a class="sidelink" href="index.html">HOME</a>
+        <a class="sidelink" href="index.html">CAR 1</a>
+        <a class="sidelink" href="index.html">CAR 2</a>
+        <a class="sidelink" href="index.html">CAR 3</a>
+        <a class="sidelink" href="index.html">OUR COMPANY</a>
+        <a class="sidelink" href="index.html">SUPPORT</a>
+        <div id="footgroup">
+                <p class="foottext" id="desc"><a class="feet" href="/index.html">DESIGN BRIEF</a></p>
+                <hr class="linksplit2">
+                <p class="foottext" id="desc"><a class="feet" href="sindex.html">SCHOOL</a></p>
+                <hr class="linksplit2">
+                <p class="foottext" id="desc"><a class="feet" href="chapter.html">CHAPTER</a></p>
+        </div>
+    </div>
     </div>
     </div>
     <div id="ycontainer">
@@ -22,7 +38,7 @@
             <h1>
                 MODEL 1
             </h1>
-            <p class="sub">Our premier electric SUV - clean transportation for the whole family</p>
+            <p id="tagline" class="sub">Our premier electric SUV - clean transportation for the whole family</p>
         </div>
         <div class="carscroll" id="scroll2">
             <h2 id="feathead">FEATURES</h2>
