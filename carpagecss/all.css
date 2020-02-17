@@ -35,23 +35,57 @@ h3 {
     font-size: 35px;
 }
 
+h4 {
+    margin: 0px;
+    padding: 0px;
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 30px;
+}
+
+h5 {
+    margin: 0px;
+    padding: 0px;
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 25px;
+}
+
+h6 {
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    font-family: "roboto";
+    font-weight: 600;
+    font-size: 18px;
+}
+
+p {
+    margin: 0px;
+    text-align: center;
+    align-content: space-between;
+    padding-left: 10px;
+    font-family: "Lato", sans-serif;
+}
+
 #nav-pos {
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 100vw;
+    width: 0vw;
     z-index: 10;
 }
 
 nav-cont {
     display: block;
+    width: 0px;
 }
 
 #ham-menu {
     position: relative;
     top: -57px;
-    left: 300px;
+    left: calc(100vw + 300px);
     padding-top: 90px;
     width: 300px;
     height: 100vh;
@@ -175,11 +209,223 @@ nav-cont {
 }
 
 #scroll6 {
-    background-color: orange;
+    display: flex;
+    flex-direction: row;
+}
+
+#6left {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#6top {
+    height: 10vh;
+}
+
+.sixrows {
+    height: 30vh;
+    width: 75vw;
+}
+
+.buildhead {
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.itemhold {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.carcolor {
+    width: 10vw;
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item1:hover {
+    cursor: pointer;
+}
+
+.extra {
+    width: 10vw;
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.item2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item2:hover {
+    cursor: pointer;
+}
+
+.item3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+}
+
+.trimput {
+    width: 25px;
+    height: 25px;
+}
+
+.trimtype {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sixdivider {
+    width: 75vw;
+    height: 4px;
+    background-color: black;
+}
+
+#vertdiv {
+    margin: 0px;
+    height: 100vh;
+    width: 4px;
+    background-color: black;
+}
+
+#6right {
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sixrighttop {
+    width: auto;
+    padding-right: 25px;
+    padding-left: 8px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#sixrightbot {
+    width: auto;
+    padding-right: 25px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#price {
+    font-size: 55px;
+    font-weight: 400;
+}
+
+#final {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 0px;
+}
+
+#buttonhold {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.payop {
+    width: 33%;
+    height: 50px;
+    font-family: "roboto";
+    font-size: 18px;
+    outline: none;
+    border: 0px;
+    box-shadow: 0px;
+}
+
+.payop:hover {
+    cursor: pointer;
+}
+
+#direct {
+    background-color: black;
+    color: white;
+}
+
+#finance {
+    background-color: white;
+    color: black;
+}
+
+#lease {
+    background-color: white;
+    color: black;
+}
+
+#horisplit {
+    width: 25vw;
+    height: .5px;
+    background-color: black;
+}
+
+.iflease {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
+
+.ifloan {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
+
+#calculate {
+    border: 0px;
+    background-color: black;
+    border-radius: 5px;
+    height: 50px;
+    width: 20vw;
+    color: white;
+    font-family: "roboto";
+    font-size: 25px;
+}
+
+#calculate:hover {
+    cursor: pointer;
 }
 
 #feathead {
     color: white;
+}
+
+.signing {
+    align-self: center;
 }
 
 .sub {

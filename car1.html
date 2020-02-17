@@ -70,7 +70,102 @@
             </div>
         </div>
         <div class="carscroll" id="scroll6">
-
+            <div id="6left">
+                <div id="6top">
+                    <h2>DESIGN YOURS</h2>
+                </div>
+                <div class="sixrows" id="sixr1">
+                   <hr class="sixdivider">
+                    <span class="buildhead"><h3>Color</h3><h4>Select One</h4></span>
+                    <div class="itemhold">
+                        <div onclick="colorClick1()" class="item1"><img class="carcolor" id="col1" src="images/whitesel.png">
+                        <h5>White</h5>
+                        </div>
+                        <div onclick="colorClick2()" class="item1"><img class="carcolor" id="col2" src="images/blackuns.png">
+                        <h5>Black</h5>
+                        </div>
+                        <div onclick="colorClick3()" class="item1"><img class="carcolor" id="col3" src="images/blueuns.png">
+                        <h5>Blue</h5>
+                        </div>
+                        <div onclick="colorClick4()" class="item1"><img class="carcolor" id="col4" src="images/orangeuns.png">
+                        <h5>Orange</h5><h6>+ $1,000</h6>
+                        </div>
+                        <div onclick="colorClick5()" class="item1"><img class="carcolor" id="col5" src="images/reduns.png">
+                        <h5>Red</h5><h6>+ $1,000</h6>
+                        </div>
+                        <div onclick="colorClick6()" class="item1"><img class="carcolor" id="col6" src="images/grayuns.png">
+                        <h5>Gray</h5><h6>+ $1,500</h6>
+                        </div>
+                    </div>
+                </div>
+                <hr class="sixdivider">
+                <div class="sixrows" id="sixr2">
+                    <span class="buildhead"><h3>Accessories</h3><h4>Select as Many as Preferred</h4></span>
+                    <div class="itemhold">
+                        <div onclick="extraClick1()" class="item2"><img class="extra" id="acc1" src="images/mats.png">
+                        <h5>Weather Mats</h5><h6>+ $120</h6>
+                        </div>
+                        <div onclick="extraClick2()" class="item2"><img class="extra" id="acc2" src="images/rack.png">
+                        <h5>Bicycle Rack</h5><h6>+ $320</h6>
+                        </div>
+                        <div onclick="extraClick3()" class="item2"><img class="extra" id="acc3" src="images/cargo.png">
+                        <h5>Cargo Cover</h5><h6>+ $65</h6>
+                        </div>
+                        <div onclick="extraClick4()" class="item2"><img class="extra" id="acc4" src="images/sunshield.png">
+                        <h5>Sunshade</h5><h6>+ $55</h6>
+                        </div>
+                        <div onclick="extraClick5()" class="item2"><img class="extra" id="acc5" src="images/kit.png">
+                        <h5>Emergency Kit</h5><h6>+ $50</h6>
+                        </div>
+                        <div onclick="extraClick6()" class="item2"><img class="extra" id="acc6" src="images/guards.png">
+                        <h5>Deflectors</h5><h6>+ $110</h6>
+                        </div>
+                    </div>
+                </div>
+                <hr class="sixdivider">
+                <div class="sixrows" id="sixr3">
+                    <span class="buildhead"><h3>Trim</h3><h4>Select One</h4></span>
+                    <div class="itemhold">
+                        <div class="item3"><h5 class="trimtype">Economy<input onclick="tOneClick()" checked id="t1" class="trimput" type="radio"></h5>
+                        <p>For everyday transportation. Comes with only the base range and acceleration, but has a significant cost advantage.</p><h6>$42,000</h6>
+                        </div>
+                        <div class="item3"><h5 class="trimtype">Performance<input onclick="tTwoClick()" id="t2" class="trimput" type="radio"></h5>
+                        <p>For the most empowered drive. Has extended range and up to 40% better acceleration than economy.</p><h6>$51,000</h6>
+                        </div>
+                        <div class="item3"><h5 class="trimtype">Luxury<input onclick="tThreeClick()" id="t3" class="trimput" type="radio"></h5>
+                        <p>For the best possible driving experience. In addition to performance-level specs, luxury includes smoother braking, improved A/C system and leather upholstery.</p><h6>$55,000</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr id="vertdiv">
+            <div id="6right">
+                <div id="sixrighttop">
+                    <h3 id="price">TOTAL</h3>
+                    <p>*Several factors can cause your final price to vary, including tax breaks in your location, financing and ordering method.</p>
+                    <br>
+                    <p>*Additional savings can come in the form of money saved on gas and tax breaks.</p>
+                    <br>
+                    <div id="buttonhold">
+                        <button id="direct" class="payop" onclick="rClick()">DIRECT</button>
+                        <button id="finance" class="payop" onclick="fClick()">FINANCE</button>
+                        <button id="lease" class="payop" onclick="lClick()">LEASE</button>
+                    </div>
+                </div>
+                <hr id="horisplit">
+                <div id="sixrightbot">
+                   <br>
+                    <span id="final"><h3 id="endvalue">$0</h3><p class="iflease">/month</p><p class="ifloan">/month</p><p class="iflease signing"> + $3,000 due at signing</p><p class="ifloan signing"> + $0 down</p></span>
+                    <br>
+                    <p class="ifloan">*4.00% APR, 72 months</p>
+                    <br class="ifloan">
+                    <p class="ifreg">*$7500 federal subsidy included in price</p>
+                    <p class="ifloan">*$7500 federal subsidy included in price</p>
+                    <p class="iflease">*36 months, 10,000 miles per year max</p>
+                    <br>
+                    <button id="calculate" onclick="priceIn()">CALCULATE</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
