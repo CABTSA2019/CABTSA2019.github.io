@@ -344,7 +344,7 @@ function rClick() {
     priceIn();
 }
 
-function lClick() {
+function fClick() {
     reg = false;
     loan = true;
     fin = false;
@@ -359,14 +359,14 @@ function lClick() {
     $(".ifreg").css("width", "0px");
     $("#direct").css("background-color", "white");
     $("#direct").css("color", "black");
-    $("#lease").css("background-color", "black");
-    $("#lease").css("color", "white");
-    $("#finance").css("background-color", "white");
-    $("#finance").css("color", "black");
+    $("#finance").css("background-color", "black");
+    $("#finance").css("color", "white");
+    $("#lease").css("background-color", "white");
+    $("#lease").css("color", "black");
     priceIn();
 }
 
-function fClick() {
+function lClick() {
     reg = false;
     loan = false;
     fin = true;
@@ -381,10 +381,10 @@ function fClick() {
     $(".ifreg").css("width", "0px");
     $("#direct").css("background-color", "white");
     $("#direct").css("color", "black");
-    $("#lease").css("background-color", "white");
-    $("#lease").css("color", "black");
-    $("#finance").css("background-color", "black");
-    $("#finance").css("color", "white");
+    $("#finance").css("background-color", "white");
+    $("#finance").css("color", "black");
+    $("#lease").css("background-color", "black");
+    $("#lease").css("color", "white");
     priceIn();
 }
 
@@ -401,7 +401,7 @@ function priceIn() {
         }
         var sendvalue = (sumtemp - sumtemp%1000)/1000 + "," + toEnum + sumtemp%1000;
         $("#endvalue").text("$" + sendvalue);
-    } else if (loan == true) {
+    } else if (fin == true) {
         var sumtemp = (sum - 7500)/90;
         sumtemp = sumtemp - sumtemp%1;
         var toEnum = "";
@@ -416,7 +416,7 @@ function priceIn() {
         }
         var sendvalue = addon + toEnum + sumtemp%1000;
         $("#endvalue").text("$" + sendvalue);
-    } else if (fin == true) {
+    } else if (loan == true) {
         var sumtemp = ((sum - 7500)*(Math.pow(1.04, 6)))/72;
         sumtemp = sumtemp - sumtemp%1;
         var toEnum = "";
@@ -431,5 +431,35 @@ function priceIn() {
         }
         var sendvalue = addon + toEnum + sumtemp%1000;
         $("#endvalue").text("$" + sendvalue);
+    }
+}
+
+function popout1() {
+        $("#pop1").css("left", "calc(100vw - 320px)");
+        $("#pop2").css("left", "100vw");
+        $("#pop3").css("left", "100vw");
+    }
+    function popout2() {
+        $("#pop1").css("left", "100vw");
+        $("#pop2").css("left", "calc(100vw - 320px)");
+        $("#pop3").css("left", "100vw");
+    }
+    function popout3() {
+        $("#pop1").css("left", "100vw");
+        $("#pop2").css("left", "100vw");
+        $("#pop3").css("left", "calc(100vw - 320px)");
+    }
+
+var adv = false;
+
+function advClick() {
+    if (!adv) {
+        $("#advcontainer").animate({left: '0vw'}, 1000);
+        $(".onblack").animate({opacity: '1'}, 2000);
+        adv = true;
+    } else {
+        $("#advcontainer").animate({left: '100vw'}, 1000);
+        $(".onblack").animate({opacity: '0'}, 2000);
+        adv = false;
     }
 }

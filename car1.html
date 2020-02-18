@@ -38,14 +38,47 @@
             <h1>
                 MODEL 1
             </h1>
+            <div id="carcont1">
+            <img id="frontimg" src="images/car1front.png">
+            </div>
             <p id="tagline" class="sub">Our premier electric SUV - clean transportation for the whole family</p>
         </div>
         <div class="carscroll" id="scroll2">
             <h2 id="feathead">FEATURES</h2>
+            <img id="featimg" src="images/car1side.png">
             <div id="barcont">
-                <div class="featbar"><h3 class="mainfeat">Self-Driving</h3></div>
-                <div class="featbar"><h3 class="mainfeat">Car App</h3></div>
-                <div class="featbar"><h3 class="mainfeat">Wifi Hotspot</h3></div>
+                <div class="featbar" onclick="popout1()"><h3 class="mainfeat" style="margin-left: 200px;">Self-Driving</h3><div id="clickable1"></div></div>
+                <div class="featbar" onclick="popout2()"><h3 class="mainfeat" style="margin-left: 380px;">Car App</h3><div id="clickable2"></div></div>
+                <div class="featbar" onclick="popout3()"><h3 class="mainfeat" style="margin-left: 320px;">Wifi Hotspot</h3><div id="clickable3"></div></div>
+            </div>
+            <div id="pop1" class="popout">
+                <h3 id="selftitle">(Automated) Self-Driving</h3>
+                <br>
+                <p>The Model 1 comes equipped with state-of-the-art self-driving capabilities, for purposes of both comfort and safety. When self-driving is turned on, the driver can safely take their hands off the wheel and their mind off the road as the Model 1 traverses rural roads, highways and even inner city streets completely independently.</p>
+                <br>
+                <p>360 sensor coverage informs the internal computer of its surroundings, processing road signs, obstacles and potential dangers. Combined with an internal GPS, you can configure your destination and route and set out, all with minimal input. </p>
+                <br>
+                <p>Self-driving is made possible through advancements in digital image-recognition that didn’t exist only a few years ago, so you can be sure that you’re sitting in the cutting edge of technology when you’re driving the Model 1.</p>
+                <br>
+                <p>Safety being one of the highest goals of our company, we would only allow this kind of functionality if it meant a safer drive for everyone on the road. When self-driving is on, your risk of a crash is reduced significantly, as long as you remain vigilant and attentive to the road as the vehicle operates. </p>
+            </div>
+            <div id="pop2" class="popout">
+                <h3>Car App</h3>
+                <br>
+                <p>By downloading the [APP NAME] app and inputting your model number/Vehicle Identification Number you can connect your car to your phone and unlock a slew of information and interactions for your vehicle. </p>
+                <br>
+                <p>With [APP NAME] you can control when your vehicle charges, allowing you to charge the Model 1 when electricity is cheaper, as well as manually stopping and starting your charge without having to unplug it.</p>
+                <br>
+                <p>Control heating, wipers and locks to warm up your car in the morning, or open the back door with a push of a button after a shopping trip.</p>
+            </div>
+            <div id="pop3" class="popout">
+                <h3>Wifi Hotspot</h3>
+                <br>
+                <p>A built in wifi hotspot makes the Model 1 a media center on wheels, enabling the use of the internet anywhere on the road. On a road trip everyone can choose the entertainment on their own devices, so no one has to endure the dullness of the road.</p>
+                <br>
+                <p>Setting this feature up through an internet service provider will allow you to choose a plan that suits you and your family, from 1gb to unlimited.</p>
+                <br>
+                <p>Additionally, this connectivity allows you to remotely start your car with the [APP NAME], as well as see real time information on your car’s condition and charge.</p>
             </div>
         </div>
         <div class="carscroll" id="scroll3">
@@ -55,19 +88,55 @@
                 <div class="captioned"><img class="symbol" src="images/battery.png"><h3 class="cap">255 Miles of Range</h3></div>
                 <div class="captioned"><img class="symbol" src="images/storage.png"><h3 class="cap">57 Cubic ft of Storage</h3></div>
             </div>
+            <div id="threebot">
+                <div id="threebotleft">
+                    <h4>Top speed of 120mph</h4>
+                    <h4>Seats up to 5</h4>
+                    <h4>190 Horsepower engine</h4>
+                    <h4>All-wheel drive</h4>
+                    <h4>Total weight of 3600lbs</h4>
+                </div>
+                <img id="specimg" src="images/car1back.png">
+                <div id="threebotright">
+                    <h4 class="advlink" onclick="advClick()">ADVANCED</h4>
+                </div>
+            </div>
+            <div id="advcontainer">
+                <div id="advtop">
+                <h2 class="onblack">IN-DEPTH</h2>
+                </div>
+                <div id="linkback" class="onblack">
+                    <h4 class="advlink onblack" style="margin-left: 50px;" onclick="advClick()">BACK</h4>
+                </div>
+            </div>
         </div>
         <div class="carscroll" id="scroll4">
             <div id="shield">
-
+                <h3 class="shieldtext">valid points</h3>
+                <h3 class="shieldtext">valid points</h3>
+                <h3 class="shieldtext">valid points</h3>
+                <h3 class="shieldtext">valid points</h3>
+                <h3 class="shieldtext">valid points</h3>
             </div>
             <div id="safeinfo">
                 <h2>SAFETY</h2>
+                <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna ali</h5>
+                <img id="award" src="images/award.png">
+                <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcor</h5>
             </div>
         </div>
         <div class="carscroll" id="scroll5">
             <div id="advinfo">
                 <h2>BENEFITS</h2>
+                <div id="benecont">
+                    <h3 class="benefits">Savings</h3>
+                    <h3 class="benefits" style="text-align: right">Environmental Impact</h3>
+                    <h3 class="benefits">Cheaper to Maintain</h3>
+                    <h3 class="benefits" style="text-align: right">Better for Health</h3>
+                    <h3 class="benefits">Quieter Ride</h3>
+                </div>
             </div>
+            <img id="benepic" src="images/car1side.png">
         </div>
         <div class="carscroll" id="scroll6">
             <div id="6left">

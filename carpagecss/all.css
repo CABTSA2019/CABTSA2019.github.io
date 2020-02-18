@@ -213,10 +213,116 @@ nav-cont {
     flex-direction: row;
 }
 
+#threebot {
+    height: 55vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#threebotleft {
+    height: 40vh;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#threebotright {
+    height: 40vh;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.advlink {
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.advlink:hover {
+    cursor: pointer;
+}
+
+#advcontainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.onblack {
+    color: white;
+}
+
+#linkback {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#carcont1 {
+    width: 100vw;
+    display: flex;
+    height: 75vh;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 #6left {
     width: 75vw;
     display: flex;
     flex-direction: column;
+}
+
+#featimg {
+    position: absolute;
+    left: -300px;
+}
+
+.popout {
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pop1 {
+    bottom: -100vh;
+    left: calc(100vw - 320px);
+}
+
+#pop2 {
+    bottom: -100vh;
+    left: 100vw;
+}
+
+#pop3 {
+    bottom: -100vh;
+    left: 100vw;
+}
+
+#selftitle {
+    text-align: center;
+}
+
+#frontimg {
+    width: 75vh;
 }
 
 #6top {
@@ -438,12 +544,76 @@ nav-cont {
     bottom: 20px;
 }
 
+#advinfo {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#benecont {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 100px);
+    justify-content: space-around;
+}
+
+#benepic {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    max-height: 50vw;
+    align-self: flex-end;
+    margin-right: 30px;
+    position: relative;
+}
+
+.benefits {
+    width: 100%;
+}
+
 .featbar {
     background-color: white;
     width: 80vw;
     height: 70px;
     display: flex;
     align-items: center;
+}
+
+.featbar:hover {
+    cursor: pointer;
+}
+
+#clickable1 {
+    z-index: 30;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+}
+
+#clickable2 {
+    z-index: 30;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+}
+
+#clickable3 {
+    z-index: 30;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+}
+
+clickable1:hover {
+    cursor: pointer;
+}
+
+clickable2:hover {
+    cursor: pointer;
+}
+
+clickable3:hover {
+    cursor: pointer;
 }
 
 #barcont {
@@ -478,19 +648,26 @@ nav-cont {
 #safeinfo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 10px;
     align-items: center;
-    width: 35vw;
-    height: 80vh;
-    background-color: aqua;
-    align-self: ;
+    width: 500px;
+    height: 90vh;
+    margin-right: calc(30vw - 360px);
 }
 
 #shield {
-    margin-left: 160px;
+    margin-left: 180px;
     width: 670px;
     height: 80vh;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#award {
+    width: 200px;
 }
 
 #placehold {
@@ -502,4 +679,22 @@ nav-cont {
 
 #tagline {
     z-index: 1;
+}
+
+@media screen and (max-width: 1550px) {
+    #safeinfo {
+        visibility: hidden;
+        width: 0px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #benepic {
+        position: relative;
+        right: 100px;
+    }
+    #shield {
+        width: 60vw;
+        margin-left: 160px;
+    }
 }
