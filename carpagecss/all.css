@@ -68,6 +68,12 @@ p {
     font-family: "Lato", sans-serif;
 }
 
+#indexbod {
+    display: flex;
+    flex-direction: column;
+
+}
+
 #nav-pos {
     position: fixed;
     display: flex;
