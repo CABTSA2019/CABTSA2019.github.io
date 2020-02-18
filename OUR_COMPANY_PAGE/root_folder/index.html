@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
  <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Our Company</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <script type="application/javascript">
+        function logoClick() {
+            $(location).attr('href', "../../index.html");
+        }
+    </script>
 </head>
 <body>
+  <div id="navbar">
+        <div id="nav-left">
+        <a class="headlink" href="../../car1.html">MODEL 1</a>
+        <a class="headlink" href="../../car1.html">MODEL 2</a>
+        <a class="headlink" href="../../car1.html">MODEL 3</a>
+        </div>
+        <div id="navlogodiv">
+        <img id="navlogo" src="../../images/logo_first_version.png" onclick="logoClick()">
+        </div>
+        <div id="nav-right">
+        <a class="headlink" href="index.html">OUR COMPANY</a>
+        <a class="headlink">SUPPORT</a>
+        </div>
+    </div>
    <div class="header"><p id="ourcompany">OUR COMPANY</p></div>
    <h1>Mission</h1>
        <table class="table">
@@ -14,7 +36,7 @@
        <tr><td><h3>Safe/Affordable Transportation-</h3></td>
     <td><div class="body"><p>Our other primary goal is to have safe vehicles and to cater to people of all incomes and socio-economic statuses. Our electric vehicles are for everyone. With three models and more in development, our mission is to aid people in creating a more eco-conscious world.</p></div></td></tr>
            </table>
-    
+
     <div id= "midline"></div>
     <h1>Accomplishments</h1>
         <table><tr><td><h3>Carbon Impact-</h3></td>
@@ -24,7 +46,19 @@
         <tr><td><h3>Donations-</h3></td>
     <td><div class="body"><p>We donate a portion of our profits to environmental advocacy organizations such as the World Wildlife Fund and the Climateworks Foundation. As of 2019, we have contributed more than one million dollars in total.</p></div></td></tr>
     </table>
-<footer>
-</footer>
+    <div id="footer">
+           <div id="exlinks">
+                <p class="foottext" id="desc" style="color: #825ea8"><br><a href="http://www.cabcallowayschool.org/" style="color: #825ea8">LEARN MORE ABOUT CAB</a></p>
+                <p class="foottext" id="desc"><a class="foottext" href="http://detsa.org/">DE TSA</a></p>
+                <p class="foottext" id="desc"><a class="foottext" href="http://www.tsaweb.org/">NATIONAL TSA</a></p>
+            </div>
+            <div id="footgroup">
+                <p class="foottext" id="desc"><a class="foottext" href="../../index.html">DESIGN BRIEF</a></p>
+                <hr class="linksplit2">
+                <p class="foottext" id="desc"><a class="foottext" href="../../school/sindex.html">SCHOOL</a></p>
+                <hr class="linksplit2">
+                <p class="foottext" id="desc"><a class="foottext" href="../../school/chapter.html">CHAPTER</a></p>
+            </div>
+        </div>
 </body>
 </html>

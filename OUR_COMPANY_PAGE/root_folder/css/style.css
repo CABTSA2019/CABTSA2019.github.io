@@ -1,0 +1,151 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size:100px;
+    bottom:-10px;
+    margin: 0px;
+}
+#ourcompany {
+    margin: 0px;
+    margin-bottom: 20px;
+}
+h1{
+    font-family: "Lato", sans-serif;
+    text-align: left;
+    font-style: italic;
+    font-size: 50px;
+    margin: 0px;
+
+}
+h3{
+    font-family: "Lato", sans-serif;
+    text-align: left;
+    font-size: 30px;
+    margin: 5px;
+}
+a {
+    text-decoration: none;
+}
+.body{
+    text-align: left;
+    width: 70%;
+    align-content: space-between;
+    padding-left: 10px;
+    font-family: "Lato", sans-serif;
+}
+.table{
+    border-spacing: 10px;
+}
+#midline{
+    background-color: black;
+    border-width: 20px;
+    height:10px;
+}
+#navbar {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    z-index: 3;
+}
+
+.headlink {
+    color: white;
+    font-family: "lato";
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.tempimg {
+    max-height: 80vh;
+    width: 40vw;
+}
+
+#navlogo {
+    width: 200px;
+}
+
+#navlogo:hover {
+    cursor: pointer;
+}
+
+#navlogodiv {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 8;
+}
+
+#nav-left {
+    width: calc(50vw - 100px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+#nav-right {
+    width: calc(50vw - 100px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+#footer {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    background-color: black;
+}
+#footgroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 360px;
+    margin-right: 50px;
+}
+.foottext {
+    width: 130px;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-family: "Neutraface","Helvetica","Arial",sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    margin: 0px;
+    font-weight: 600;
+}
+#desc {
+    display: flex;
+    align-self: center;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#exlinks {
+    height: 120px;
+    margin: 0px;
+}
+.linksplit2 {
+    height: 80px;
+    width: 1px;
+    background-color: white;
+}

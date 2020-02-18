@@ -7,22 +7,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <script type="application/javascript">
+        function logoClick() {
+            $(location).attr('href', "index.html");
+        }
+    </script>
 </head>
 <body>
     <div id="navbar">
-        <li class="headlink">Car 1</li>
-        <li class="headlink">Car 2</li>
-        <li class="headlink">Car 3</li>
-        <li class="headlink">Our Company</li>
-        <li class="headlink">Support</li>
+        <div id="nav-left">
+        <a class="headlink" href="car1.html">MODEL 1</a>
+        <a class="headlink" href="car1.html">MODEL 2</a>
+        <a class="headlink" href="car1.html">MODEL 3</a>
+        </div>
+        <div id="navlogodiv">
+        <img id="navlogo" src="images/logo_first_version.png" onclick="logoClick()">
+        </div>
+        <div id="nav-right">
+        <a class="headlink" href="OUR_COMPANY_PAGE/root_folder/index.html">OUR COMPANY</a>
+        <a class="headlink">SUPPORT</a>
+        </div>
     </div>
     <div id="indexbod">
         <h1>MODEL 1</h1>
-        <img src="images/car1front.png">
+        <img class="tempimg" src="images/car1front.png">
         <h1>MODEL 2</h1>
-        <img src="images/car2front.png">
+        <img class="tempimg" src="images/car2front.png">
         <h1>MOTORCYCLE</h1>
-        <img src="images/car3side.png">
+        <img class="tempimg" src="images/car3side.png">
     </div>
+    <div id="footer">
+           <div id="exlinks">
+                <p class="foottext" id="desc" style="color: #825ea8"><br><a href="http://www.cabcallowayschool.org/" style="color: #825ea8">LEARN MORE ABOUT CAB</a></p>
+                <p class="foottext" id="desc"><a class="foottext" href="http://detsa.org/">DE TSA</a></p>
+                <p class="foottext" id="desc"><a class="foottext" href="http://www.tsaweb.org/">NATIONAL TSA</a></p>
+            </div>
+            <div id="footgroup">
+                <p class="foottext" id="desc"><a class="foottext" href="index.html">DESIGN BRIEF</a></p>
+                <hr class="linksplit2">
+                <p class="foottext" id="desc"><a class="foottext" href="school/sindex.html">SCHOOL</a></p>
+                <hr class="linksplit2">
+                <p class="foottext" id="desc"><a class="foottext" href="school/chapter.html">CHAPTER</a></p>
+            </div>
+        </div>
 </body>
 </html>

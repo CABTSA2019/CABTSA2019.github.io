@@ -71,7 +71,63 @@ p {
 #indexbod {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
 
+#navbar {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    z-index: 3;
+}
+
+.headlink {
+    color: white;
+    font-family: "lato";
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.tempimg {
+    max-height: 80vh;
+    width: 40vw;
+}
+
+#navlogo {
+    width: 200px;
+}
+
+#navlogo:hover {
+    cursor: pointer;
+}
+
+#navlogodiv {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 8;
+}
+
+#nav-left {
+    width: calc(50vw - 100px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+#nav-right {
+    width: calc(50vw - 100px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 10;
 }
 
 #nav-pos {
@@ -134,18 +190,21 @@ nav-cont {
 
 .sidelink {
     color: white;
-    margin-right: 30px;
-
+    font-family: "lato";
+    font-weight: 300;
+    font-size: 30px;
+    margin-right: 25px;
 }
 
-#footgroup {
+#externalgroup {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
+    margin-right: 20px;
 }
 
-.foottext {
+.externaltext {
     width: auto;
     height: auto;
     color: white;
@@ -156,7 +215,7 @@ nav-cont {
     font-weight: 600;
 }
 
-.linksplit2 {
+.externallinksplit2 {
     height: 1px;
     width: 80px;
     background-color: white;
@@ -685,6 +744,53 @@ clickable3:hover {
 
 #tagline {
     z-index: 1;
+}
+
+#footer {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    background-color: black;
+}
+#footgroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 360px;
+    margin-right: 50px;
+}
+.foottext {
+    width: 130px;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-family: "Neutraface","Helvetica","Arial",sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    margin: 0px;
+    font-weight: 600;
+}
+#desc {
+    display: flex;
+    align-self: center;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#exlinks {
+    height: 120px;
+    margin: 0px;
+}
+.linksplit2 {
+    height: 80px;
+    width: 1px;
+    background-color: white;
 }
 
 @media screen and (max-width: 1550px) {
