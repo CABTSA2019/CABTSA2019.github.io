@@ -13,6 +13,7 @@ h1 {
     font-family: "lato";
     font-weight: 100;
     font-size: 150px;
+    color: white;
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -70,6 +71,10 @@ p {
 
 .givemargin {
     margin-left: 15px;
+}
+
+.addwhite {
+    color: white;
 }
 
 #indexbod {
@@ -240,25 +245,26 @@ nav-cont {
 }
 
 #scroll1 {
-    background-image: url(../images/car1back1.png);
+    background-image: url(../images/car2back1.png);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
 }
 
 #scroll2 {
-    background-color: black;
+    background-color: #FF710E;
 }
 
 #scroll3 {
-    background-image: url(../images/car1back3.png);
+    background-image: url(../images/car2back3.png);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #scroll4 {
-    background-image: url(../images/car1back4.png);
+    background-image: url(../images/car2back4.png);
+    background-color: black;
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
@@ -311,6 +317,7 @@ nav-cont {
 .advlink {
     text-decoration: underline;
     font-size: 40px;
+    color: white;
 }
 
 .advlink:hover {
@@ -359,7 +366,7 @@ nav-cont {
 
 #featimg {
     position: absolute;
-    left: -300px;
+    left: -400px;
 }
 
 .popout {
@@ -618,7 +625,7 @@ nav-cont {
 }
 
 #advinfo {
-    height: 600px;
+    height: 500px;
     margin-left: 15px;
     display: flex;
     flex-direction: column;
@@ -687,6 +694,7 @@ nav-cont {
     right: 2vw;
 }
 
+
 .featbar {
     background-color: white;
     width: 80vw;
@@ -744,6 +752,7 @@ clickable3:hover {
 
 #spechead {
     text-align: center;
+    color: white;
 }
 
 #symbolhold {
@@ -759,6 +768,7 @@ clickable3:hover {
 
 .cap {
     width: 20vw;
+    color: white;
 }
 
 #safeinfo {
@@ -799,6 +809,7 @@ clickable3:hover {
 
 #tagline {
     z-index: 1;
+    color: white;
 }
 
 #footer {
