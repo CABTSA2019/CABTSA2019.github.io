@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 .header {
     font-family: "Lato", sans-serif;
@@ -15,12 +16,16 @@ body {
     margin: 0px;
     margin-bottom: 20px;
 }
+.headlink:hover {
+    color: #2C83DE;
+}
 h1{
     font-family: "Lato", sans-serif;
     text-align: left;
     font-style: italic;
     font-size: 50px;
     margin: 0px;
+    margin-left: 10px;
 
 }
 h3{
@@ -41,6 +46,7 @@ a {
 }
 .table{
     border-spacing: 10px;
+    width: 100vw;
 }
 #midline{
     background-color: black;
@@ -63,11 +69,7 @@ a {
     font-family: "lato";
     font-weight: 300;
     font-size: 30px;
-}
-
-.tempimg {
-    max-height: 80vh;
-    width: 40vw;
+    transition: color .5s;
 }
 
 #navlogo {
@@ -148,4 +150,8 @@ a {
     height: 80px;
     width: 1px;
     background-color: white;
+}
+#content {
+    display: flex;
+    flex-direction: column;
 }

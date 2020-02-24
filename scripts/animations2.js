@@ -464,6 +464,18 @@ function advClick() {
     }
 }
 
+function orderClick() {
+    if (!adv) {
+        $("#ordercontainer").animate({left: '0vw'}, 1000);
+        $(".onblack2").animate({opacity: '1'}, 2000);
+        adv = true;
+    } else {
+        $("#ordercontainer").animate({left: '100vw'}, 1000);
+        $(".onblac2k").animate({opacity: '0'}, 2000);
+        adv = false;
+    }
+}
+
 function hovmenu1() {
     $("#ben1").animate({opacity: 1}, 400);
 }

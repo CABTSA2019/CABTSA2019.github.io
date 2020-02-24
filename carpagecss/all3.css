@@ -1,0 +1,291 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "lato";
+    font-weight: 100;
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-family: "roboto";
+    font-size: 100px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    margin: 0px;
+    padding: 0px;
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 35px;
+}
+
+h4 {
+    margin: 0px;
+    padding: 0px;
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 30px;
+}
+
+h5 {
+    margin: 0px;
+    padding: 0px;
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 25px;
+}
+
+h6 {
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    font-family: "roboto";
+    font-weight: 600;
+    font-size: 18px;
+}
+
+p {
+    margin: 0px;
+    text-align: center;
+    align-content: space-between;
+    padding-left: 10px;
+    font-family: "Lato", sans-serif;
+}
+
+.givemargin {
+    margin-left: 15px;
+}
+
+.addwhite {
+    color: white;
+}
+
+#nav-pos {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 0vw;
+    z-index: 10;
+}
+
+nav-cont {
+    display: block;
+    width: 0px;
+}
+
+#ham-menu {
+    position: relative;
+    top: -57px;
+    left: calc(100vw + 300px);
+    padding-top: 90px;
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+#ham {
+    position: fixed;
+    right: 0px;
+    width: 50px;
+    margin-top: 10px;
+    margin-right: 30px;
+    z-index: 20;
+}
+
+#clickham {
+    position: fixed;
+    right: 0px;
+    margin-top: 10px;
+    margin-right: 19px;
+    z-index: 21;
+    width: 70px;
+    height: 60px;
+}
+
+#dimmer {
+    z-index: 3;
+    opacity: .5;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    visibility: hidden;
+}
+
+.sidelink {
+    color: white;
+    font-family: "lato";
+    font-weight: 300;
+    font-size: 30px;
+    margin-right: 25px;
+    transition: color .5s;
+}
+
+.sidelink:hover {
+    color: #2C83DE;
+}
+
+#externalgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    margin-right: 20px;
+}
+
+.externaltext {
+    width: auto;
+    height: auto;
+    color: white;
+    text-align: right;
+    font-family: "Neutraface","Helvetica","Arial",sans-serif;
+    font-size: 15px;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.externallinksplit2 {
+    height: 1px;
+    width: 80px;
+    background-color: white;
+}
+
+.feet {
+    color: white;
+    text-align: right;
+}
+
+#ymove {
+    width: 17px;
+}
+
+#bigtitle {
+    color: black;
+}
+
+.carscroll {
+    height: 100vh;
+    width: 100vw;
+}
+
+#scroll1 {
+    background-image: url(../images/car3back1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#scroll2 {
+    background-color: #26bfff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#scroll3 {
+    background-image: url(../images/car2back3.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#twoleft {
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tworight {
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newvtext {
+    font-size: 50px;
+    width: 50vw;
+    text-align: center;
+}
+
+.onblack {
+    color: white;
+    opacity: 0;
+}
+
+.sub {
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 24px;
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.frontsub {
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 24px;
+    width: 100vw;
+    text-align: center;
+}
+
+#tagline {
+    z-index: 1;
+    color: black;
+}
+
+@media screen and (max-width: 1450px) {
+    #threebotleft {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #safeinfo {
+        visibility: hidden;
+        width: 0px;
+    }
+    #mobtitle {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #benepic {
+        position: relative;
+        right: 100px;
+    }
+    #shield {
+        width: 60vw;
+        margin-left: 160px;
+    }
+}

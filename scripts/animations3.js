@@ -93,55 +93,7 @@ $(document).ready(function(){
                     scrollOnce = oneScroll();
                     x = 0;
                 }, 1100);
-            } else if (pos >= $("#scroll3").position().top && pos < $("#scroll4").position().top && down && !scrollOnce) {
-                scrollOnce = true;
-                pos = $("#scroll4").position().top;
-                $("html, body").animate({ scrollTop: pos }, 1000);
-                setTimeout(function(){
-                    scrollOnce = oneScroll();
-                    x = 0;
-                }, 1100);
-            } else if (pos >= $("#scroll4").position().top && pos < $("#scroll5").position().top && down && !scrollOnce) {
-                scrollOnce = true;
-                pos = $("#scroll5").position().top;
-                $("html, body").animate({ scrollTop: pos }, 1000);
-                setTimeout(function(){
-                    scrollOnce = oneScroll();
-                    x = 0;
-                }, 1100);
-            } else if (pos >= $("#scroll5").position().top && pos < $("#scroll6").position().top && down && !scrollOnce) {
-                scrollOnce = true;
-                pos = $("#scroll6").position().top;
-                $("html, body").animate({ scrollTop: pos }, 1000);
-                setTimeout(function(){
-                    scrollOnce = oneScroll();
-                    x = 0;
-                }, 1100);
-            } else if (pos >= $("#scroll6").position().top && !down && !scrollOnce) {
-                scrollOnce = true;
-                pos = $("#scroll5").position().top;
-                $("html, body").animate({ scrollTop: pos }, 1000);
-                setTimeout(function(){
-                    scrollOnce = oneScroll();
-                    x = 0;
-                }, 1100);
-            } else if (pos >= $("#scroll5").position().top && pos < $("#scroll6").position().top && !down && !scrollOnce) {
-                scrollOnce = true;
-                pos = $("#scroll4").position().top;
-                $("html, body").animate({ scrollTop: pos }, 1000);
-                setTimeout(function(){
-                    scrollOnce = oneScroll();
-                    x = 0;
-                }, 1100);
-            } else if (pos >= $("#scroll4").position().top && pos < $("#scroll5").position().top && !down && !scrollOnce) {
-                scrollOnce = true;
-                pos = $("#scroll3").position().top;
-                $("html, body").animate({ scrollTop: pos }, 1000);
-                setTimeout(function(){
-                    scrollOnce = oneScroll();
-                    x = 0;
-                }, 1100);
-            } else if (pos >= $("#scroll3").position().top && pos < $("#scroll4").position().top && !down && !scrollOnce) {
+            } else if (pos >= $("#scroll3").position().top && !down && !scrollOnce) {
                 scrollOnce = true;
                 pos = $("#scroll2").position().top;
                 $("html, body").animate({ scrollTop: pos }, 1000);
