@@ -206,10 +206,11 @@ nav-cont {
 }
 
 #scroll3 {
-    background-image: url(../images/car2back3.png);
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #26BF59;
 }
 
 #twoleft {
@@ -227,6 +228,25 @@ nav-cont {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#threeleft {
+    display: flex;
+    flex-direction: column;
+    width: 38vw;
+    height: 100vh;
+}
+
+#threeright {
+    background-image: url(/images/future.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58vw;
+    height: 100vh;
 }
 
 #newvtext {
@@ -261,6 +281,10 @@ nav-cont {
 #tagline {
     z-index: 1;
     color: black;
+}
+
+.bullet {
+    color: white;
 }
 
 @media screen and (max-width: 1450px) {

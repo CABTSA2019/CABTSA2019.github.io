@@ -7,7 +7,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="jsc3d/jsc3d.js"></script>
+    <script type="text/javascript" src="jsc3d/jsc3d.webgl.js"></script>
+    <script type="text/javascript" src="jsc3d/jsc3d.touch.js"></script>
     <script type="application/javascript">
+        /*$(document).ready(function(){
+        var viewer = new JSC3D.Viewer(document.getElementById('cv'));
+        viewer.setParameter('SceneUrl', 'images/car1.stl');
+        viewer.setParameter('ModelColor', 'black');
+        viewer.setParameter('BackgroundColor1', 'white');
+        viewer.setParameter('BackgroundColor2', 'white');
+        viewer.setParameter('RenderMode', 'flat');
+        viewer.setParameter('Renderer', 'webgl');
+        viewer.init();
+        viewer.update();
+        var texture = new JSC3D.Texture('name', onready);
+        texture.srcUrl = 'images/Range_Rover_Evoque.mtl';
+        });*/
         function logoClick() {
             $(location).attr('href', "index.html");
         }
@@ -18,7 +34,7 @@
         <div id="nav-left">
         <a class="headlink" href="car1.html">MODEL 1</a>
         <a class="headlink" href="car2.html">MODEL 2</a>
-        <a class="headlink" href="car1.html">MODEL 3</a>
+        <a class="headlink" href="car3.html">MODEL 3</a>
         </div>
         <div id="navlogodiv">
         <img id="navlogo" src="images/logo_first_version.png" onclick="logoClick()">
@@ -42,7 +58,7 @@
         <h1>MOTORCYCLE</h1>
         <img class="tempimg" src="images/car3sil.png">
         <p id="tagline" class="frontsub">Our premier electric SUV - clean transportation for the whole family</p>
-        <a class="frontbutton" href="car1.html">VIEW</a>
+        <a class="frontbutton" href="car3.html">VIEW</a>
     </div>
     <div id="footer">
            <div id="exlinks">
@@ -53,7 +69,7 @@
             <div id="footgroup">
                 <p class="foottext" id="desc"><a class="foottext" href="index.html">DESIGN BRIEF</a></p>
                 <hr class="linksplit2">
-                <p class="foottext" id="desc"><a class="foottext" href="school/sindex.html">SCHOOL</a></p>
+                <p class="foottext" id="desc"><a class="foottext" href="school/index.html">SCHOOL</a></p>
                 <hr class="linksplit2">
                 <p class="foottext" id="desc"><a class="foottext" href="school/chapter.html">CHAPTER</a></p>
             </div>

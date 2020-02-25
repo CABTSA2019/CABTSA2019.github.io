@@ -47,6 +47,7 @@ a {
 .table{
     border-spacing: 10px;
     width: 100vw;
+    min-height: 300px;
 }
 #midline{
     background-color: black;

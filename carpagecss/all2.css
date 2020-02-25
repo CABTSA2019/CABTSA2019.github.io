@@ -77,6 +77,10 @@ p {
     color: white;
 }
 
+#rightmarge {
+    margin-right: 15px;
+}
+
 #advmain {
     display: grid;
     grid-template-columns: auto auto;
@@ -807,8 +811,8 @@ nav-cont {
 }
 
 #ben4 {
-    top: 435vh;
-    right: 6vw;
+    top: 437vh;
+    right: 8vw;
 }
 
 #ben5 {
@@ -886,6 +890,7 @@ clickable3:hover {
 
 .symbol {
     width: 20vw;
+    max-width: 300px;
 }
 
 .cap {
