@@ -456,7 +456,7 @@ nav-cont {
 #carcont1 {
     width: 100vw;
     display: flex;
-    height: 75vh;
+    height: calc(100vh - 230px);
     justify-content: center;
     align-items: flex-end;
 }
@@ -468,34 +468,38 @@ nav-cont {
 }
 
 #featimg {
+    height: 80vh;
+    max-height: 700px;
     position: absolute;
+    top: calc(115vh);
     left: -300px;
 }
 
 .popout {
     height: 100vh;
-    width: 300px;
+    width: 0px;
+    visibility: hidden;
     background-color: white;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#pop1 {
-    bottom: -100vh;
-    left: calc(100vw - 320px);
-}
-
-#pop2 {
+    padding-right: 20px;
     bottom: -100vh;
     left: 100vw;
 }
 
-#pop3 {
-    bottom: -100vh;
-    left: 100vw;
+.anihide1 {
+    visibility: hidden;
+}
+
+.anihide2 {
+    visibility: hidden;
+}
+
+.anihide3 {
+    visibility: hidden;
 }
 
 #selftitle {
@@ -811,14 +815,22 @@ nav-cont {
 
 .featbar {
     background-color: white;
-    width: 80vw;
+    width: 85vw;
     height: 70px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    transition: color .5s, background-color .5s;
+}
+
+.mainfeat {
+    margin-right: 400px;
 }
 
 .featbar:hover {
     cursor: pointer;
+    color: white;
+    background-color: #2C83DE;
 }
 
 #clickable1 {
@@ -868,6 +880,11 @@ clickable3:hover {
     text-align: center;
 }
 
+#specimg {
+    height: calc(100vh - 400px);
+    max-height: 550px;
+}
+
 #symbolhold {
     width: 100vw;
     display: flex;
@@ -876,7 +893,7 @@ clickable3:hover {
 }
 
 .symbol {
-    width: 20vw;
+    width: calc(10vw + 10vh);
     max-width: 300px;
 }
 
@@ -900,7 +917,7 @@ clickable3:hover {
 }
 
 #shield {
-    margin-left: 180px;
+    margin-left: calc(11vh + 5vw);
     width: 670px;
     height: 80vh;
     display: flex;
@@ -922,6 +939,10 @@ clickable3:hover {
 
 #tagline {
     z-index: 1;
+}
+
+.shieldtext {
+    color: white;
 }
 
 #footer {
@@ -971,6 +992,7 @@ clickable3:hover {
     background-color: white;
 }
 
+
 @media screen and (max-width: 1450px) {
     #threebotleft {
         margin-left: 15px;
@@ -992,8 +1014,21 @@ clickable3:hover {
         position: relative;
         right: 100px;
     }
+}
+
+@media screen and (max-width: 1200px and min-width: 900px) {
     #shield {
         width: 60vw;
-        margin-left: 160px;
+        margin-left: 6vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #shield {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-left: 4vh;
     }
 }

@@ -435,19 +435,49 @@ function priceIn() {
 }
 
 function popout1() {
-        $("#pop1").css("left", "calc(100vw - 320px)");
+        var poppos = $("html, body").width() - 320;
+        $("#pop2").css("visibility", "hidden");
+        $("#pop3").css("visibility", "hidden");
+        $("#pop2").css("width", "0px");
+        $("#pop3").css("width", "0px");
         $("#pop2").css("left", "100vw");
         $("#pop3").css("left", "100vw");
+        $(".anihide2").css("visibility", "hidden");
+        $(".anihide3").css("visibility", "hidden");
+        $("#pop1").css("visibility", "visible");
+        $("#pop1").css("width", "300px");
+        $("#pop1").animate({left: poppos}, 1000);
+        $(".anihide1").css("visibility", "visible");
     }
     function popout2() {
+        var poppos = $("html, body").width() - 320;
+        $("#pop1").css("visibility", "hidden");
+        $("#pop3").css("visibility", "hidden");
+        $("#pop1").css("width", "0px");
+        $("#pop3").css("width", "0px");
         $("#pop1").css("left", "100vw");
-        $("#pop2").css("left", "calc(100vw - 320px)");
         $("#pop3").css("left", "100vw");
+        $(".anihide1").css("visibility", "hidden");
+        $(".anihide3").css("visibility", "hidden");
+        $("#pop2").css("visibility", "visible");
+        $("#pop2").css("width", "300px");
+        $("#pop2").animate({left: poppos}, 1000);
+        $(".anihide2").css("visibility", "visible");
     }
     function popout3() {
-        $("#pop1").css("left", "100vw");
+        var poppos = $("html, body").width() - 320;
+        $("#pop2").css("visibility", "hidden");
+        $("#pop1").css("visibility", "hidden");
+        $("#pop2").css("width", "0px");
+        $("#pop1").css("width", "0px");
         $("#pop2").css("left", "100vw");
-        $("#pop3").css("left", "calc(100vw - 320px)");
+        $("#pop1").css("left", "100vw");
+        $(".anihide2").css("visibility", "hidden");
+        $(".anihide1").css("visibility", "hidden");
+        $("#pop3").css("visibility", "visible");
+        $("#pop3").css("width", "300px");
+        $("#pop3").animate({left: poppos}, 1000);
+        $(".anihide3").css("visibility", "visible");
     }
 
 var adv = false;
