@@ -7,9 +7,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="jsc3d/jsc3d.js"></script>
-    <script type="text/javascript" src="jsc3d/jsc3d.webgl.js"></script>
-    <script type="text/javascript" src="jsc3d/jsc3d.touch.js"></script>
     <script type="application/javascript">
         /*$(document).ready(function(){
         var viewer = new JSC3D.Viewer(document.getElementById('cv'));
@@ -27,7 +24,56 @@
         function logoClick() {
             $(location).attr('href', "index.html");
         }
+
+        $(document).ready(function(){
+            var open = false;
+            $("#clickham").click(function(){
+            if (!open) {
+                open = true;
+                var leftvalue;
+                $("#ham-menu").css("left", "150vw")
+                $("#ham").attr("src", "images/acksw.png");
+                $("#ham").css("width", "75px");
+                $("#dimmer").css("visibility", "visible");
+                $("#nav-pos").css("left", "100vw");
+                if ($( window ).width() > 600) {
+                $("#ham-menu").css("padding-right", "200px");
+                }
+                if ($( window ).width() < 600) {
+                    leftvalue = -50;
+                } else {
+                    leftvalue = -30;
+                }
+                $("#ham-menu").animate({left: leftvalue + "vw"}, "fast");
+                $("#nav-cont").css("width", "300px");
+            } else {
+                open = false;
+                $("#ham").attr("src", "images/blackham.png");
+                $("#ham").css("width", "90px");
+                $("#dimmer").css("visibility", "hidden");
+                $("#nav-pos").css("left", "100vw");
+                $("#ham-menu").css("padding-right", "0px");
+                $("#ham-menu").animate({left: '600px'}, "fast");
+                $("#nav-cont").css("width", "0px");
+            }
+        });
+        });
     </script>
+    <style>
+        @media screen and (min-width: 1200px) {
+            #dimmer {
+                visibility: collapse;
+                height: 0px;
+                width: 0px;
+            }
+            #nav-pos {
+                visibility: hidden;
+            }
+            #navcont {
+                visibility: hidden;
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="navbar">
@@ -44,7 +90,31 @@
         <a class="headlink">SUPPORT</a>
         </div>
     </div>
+    <div id="dimmer"></div>
+    <div id="nav-pos">
+    <div id="nav-cont">
+        <div id="clickham">
+            <img src="images/blackham.png" id="ham" style="width: 90px; height: 75px">
+        </div>
+    <div id="ham-menu">
+        <a class="sidelink" href="index.html">HOME</a>
+        <a class="sidelink" href="car1.html">CAR 1</a>
+        <a class="sidelink" href="car2.html">CAR 2</a>
+        <a class="sidelink" href="car3.html">NEXT UP</a>
+        <a class="sidelink" href="OUR_COMPANY_PAGE/root_folder/index.html">OUR COMPANY</a>
+        <a class="sidelink">SUPPORT</a>
+        <div id="externalgroup">
+                <p class="externaltext" id="desc"><a class="feet" href="index.html">DESIGN BRIEF</a></p>
+                <hr class="externallinksplit2">
+                <p class="externaltext" id="desc"><a class="feet" href="school/index.html">SCHOOL</a></p>
+                <hr class="externallinksplit2">
+                <p class="externaltext" id="desc"><a class="feet" href="school/chapter.html">CHAPTER</a></p>
+        </div>
+    </div>
+    </div>
+    </div>
     <div id="indexbod">
+       <img id="mob-head" src="images/logo_first_version.png">
         <h1>MODEL 1</h1>
         <img class="tempimg" src="images/car1front.png">
         <p id="tagline" class="frontsub">Our premier electric SUV - clean transportation for the whole family</p>
@@ -62,9 +132,9 @@
     </div>
     <div id="footer">
            <div id="exlinks">
-                <p class="foottext" id="desc" style="color: #825ea8"><br><a href="http://www.cabcallowayschool.org/" style="color: #825ea8">LEARN MORE ABOUT CAB</a></p>
-                <p class="foottext" id="desc"><a class="foottext" href="http://detsa.org/">DE TSA</a></p>
-                <p class="foottext" id="desc"><a class="foottext" href="http://www.tsaweb.org/">NATIONAL TSA</a></p>
+                <p class="foottext" id="desc" style="color: #825ea8"><br><a href="http://www.cabcallowayschool.org/" style="color: #825ea8; font-size: 0px;">LEARN MORE ABOUT CAB</a></p>
+                <p class="foottext" id="desc"><a class="foottext" href="http://detsa.org/" style="color: #825ea8; font-size: 0px;">DE TSA</a></p>
+                <p class="foottext" id="desc"><a class="foottext" href="http://www.tsaweb.org/" style="color: #825ea8; font-size: 0px;">NATIONAL TSA</a></p>
             </div>
             <div id="footgroup">
                 <p class="foottext" id="desc"><a class="foottext" href="index.html">DESIGN BRIEF</a></p>

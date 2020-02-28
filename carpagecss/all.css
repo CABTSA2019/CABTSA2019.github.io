@@ -991,7 +991,10 @@ clickable3:hover {
     width: 1px;
     background-color: white;
 }
-
+#mob-head {
+    visibility: hidden;
+    height: 0px;
+}
 
 @media screen and (max-width: 1450px) {
     #threebotleft {
@@ -1004,15 +1007,51 @@ clickable3:hover {
         visibility: hidden;
         width: 0px;
     }
-    #mobtitle {
-        visibility: visible;
-    }
 }
 
 @media screen and (max-width: 1200px) {
     #benepic {
         position: relative;
         right: 100px;
+    }
+    #navbar {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    #mob-head {
+        visibility: visible;
+        height: 100px;
+        margin-top: 10px;
+    }
+    #externalgroup {
+        flex-direction: row;
+    }
+    .externaltext {
+        font-size: 20px;
+    }
+    .externallinksplit2 {
+        height: 80px;
+        width: 1px;
+    }
+    #exlinks {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .foottext {
+        font-size: 30px;
+    }
+    #footer {
+        justify-content: center;
+    }
+    #ham-menu {
+        left: 150vw;
+        width: 50vw;
+    }
+    .sidelink {
+        font-size: 70px;
+        text-align: right;
     }
 }
 
@@ -1030,5 +1069,14 @@ clickable3:hover {
         align-items: center;
         width: 100vw;
         margin-left: 4vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #ham-menu {
+        padding-right: 0px;
+        padding-top: 0x;
+        width: 100vw;
+        left: 200vw;
     }
 }
