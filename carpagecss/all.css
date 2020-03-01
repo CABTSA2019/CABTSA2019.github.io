@@ -744,7 +744,7 @@ nav-cont {
 }
 
 #advinfo {
-    height: 600px;
+    height: calc(100vh - 270px);
     margin-left: 15px;
     display: flex;
     flex-direction: column;
@@ -769,15 +769,24 @@ nav-cont {
 
 .benefits {
     width: 100%;
+    color: white;
+    background-color: #2C83DE;
+    height: 50px;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
 }
 
 .benefits:hover {
     cursor: pointer;
+    background-color: white;
+    color: #2C83DE;
 }
 
 .beneinfo {
     background-color: white;
-    height: 200px;
+    height: 150px;
     width: 300px;
     position: absolute;
     z-index: 2;
@@ -907,7 +916,7 @@ clickable3:hover {
     justify-content: space-between;
     padding: 10px;
     align-items: center;
-    width: 26vw;
+    width: 40vw;
     height: 90vh;
     margin-right: calc(30vw - 360px);
 }
@@ -995,6 +1004,9 @@ clickable3:hover {
     visibility: hidden;
     height: 0px;
 }
+#longerbar {
+    width: 90vw;
+}
 
 @media screen and (max-width: 1450px) {
     #threebotleft {
@@ -1002,14 +1014,11 @@ clickable3:hover {
     }
 }
 
-@media screen and (max-width: 1300px) {
-    #safeinfo {
-        visibility: hidden;
-        width: 0px;
-    }
-}
-
 @media screen and (max-width: 1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
     #benepic {
         position: relative;
         right: 100px;
@@ -1019,10 +1028,14 @@ clickable3:hover {
         height: 0px;
         width: 0px;
     }
-    #mob-head {
+    #mobtitle {
         visibility: visible;
         height: 100px;
         margin-top: 10px;
+    }
+    #safeinfo {
+        visibility: hidden;
+        width: 0px;
     }
     #externalgroup {
         flex-direction: row;
@@ -1046,12 +1059,175 @@ clickable3:hover {
         justify-content: center;
     }
     #ham-menu {
-        left: 150vw;
-        width: 50vw;
+        left: 100vw;
+        width: 0px;
+        visibility: collapse;
+    }
+    #ham {
+        left: calc(100vw - 110px);
+        width: 90px;
+    }
+    #clickham {
+        left: calc(100vw - 110px);
     }
     .sidelink {
-        font-size: 70px;
+        font-size: 60px;
         text-align: right;
+    }
+    #featimg {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+    #longerbar {
+        width: 100vw;
+    }
+    .featbar {
+        width: 100vw;
+        height: 100px;
+        justify-content: flex-start;
+    }
+    .mainfeat {
+        font-size: 60px;
+        margin-right: 0px;
+        margin-left: 20px;
+        text-align: left;
+    }
+    #feathead {
+        width: 100vw;
+        margin-left: 0px;
+        text-align: center;
+    }
+    #scroll2 {
+        height: 160vh;
+    }
+    .popout {
+        width: 100vw;
+    }
+    #pop1 {
+        top: 190vh;
+        height: 65vh;
+        visibility: visible;
+        left: 0px;
+    }
+    .anihide1 {
+        visibility: visible;
+    }
+    #pop2 {
+        top: 190vh;
+        height: 65vh;
+    }
+    #pop3 {
+        top: 190vh;
+        height: 65vh;
+    }
+    #symbolhold {
+        flex-direction: column;
+    }
+    .captioned {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .symbol {
+        width: 200px;
+        margin-top: 10px;
+    }
+    .cap {
+        width: auto;
+    }
+    #specimg {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+    #advcontainer {
+        opacity: 0;
+        left: 0px;
+        top: 250vh;
+        height: 140vh;
+        z-index: -5;
+    }
+    #scroll3 {
+        height: 140vh;
+    }
+    #threebot {
+        flex-direction: column;
+    }
+    #threebotleft {
+        height: 80vh;
+        align-items: center;
+        margin-left: 0px;
+    }
+    #ordercontainer {
+        opacity: 0;
+        left: 0px;
+        height: 140vh;
+        z-index: -5;
+    }
+    #benepic {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+    .beneinfo {
+        width: 450px;
+    }
+    #ben1 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben2 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben3 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben4 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben5 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben6 {
+        top: 570vh;
+        left: 30px;
+    }
+    #scroll6 {
+        flex-direction: column;
+    }
+    #6left {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .sixrows {
+        justify-content: center;
+        width: calc(100vw - 40px);
+    }
+    .sixdivider {
+        width: 100vw;
+    }
+    .changemob {
+        font-size: 20px;
+        text-align: center;
+    }
+    #sixrighttop {
+        height: 30vh;
+    }
+    #vertdiv {
+        width: 100vw;
+        height: 10px;
+        margin-top: 5vh;
+    }
+    #ordercontainer {
+        height: 82vh;
+        top: 718vh;
     }
 }
 
@@ -1069,14 +1245,5 @@ clickable3:hover {
         align-items: center;
         width: 100vw;
         margin-left: 4vh;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #ham-menu {
-        padding-right: 0px;
-        padding-top: 0x;
-        width: 100vw;
-        left: 200vw;
     }
 }

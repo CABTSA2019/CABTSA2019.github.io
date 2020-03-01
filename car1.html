@@ -47,7 +47,7 @@
             <h2 id="feathead" class="givemargin">FEATURES</h2>
             <img id="featimg" src="images/car1side.png">
             <div id="barcont">
-                <div class="featbar" onclick="popout1()" style="width: 90vw"><h3 class="mainfeat">Self-Driving</h3><div id="clickable1"></div></div>
+                <div class="featbar" id="longerbar" onclick="popout1()"><h3 class="mainfeat">Self-Driving</h3><div id="clickable1"></div></div>
                 <div class="featbar" onclick="popout2()"><h3 class="mainfeat">DelEV App</h3><div id="clickable2"></div></div>
                 <div class="featbar" onclick="popout3()"><h3 class="mainfeat">Wifi Hotspot</h3><div id="clickable3"></div></div>
             </div>
@@ -148,11 +148,11 @@
             <div id="advinfo">
                 <h2>BENEFITS</h2>
                 <div id="benecont">
-                    <h3 class="benefits" onmouseover="hovmenu1()">Savings</h3>
-                    <h3 class="benefits" style="text-align: right" onmouseover="hovmenu2()">Environmental Impact</h3>
-                    <h3 class="benefits" onmouseover="hovmenu3()">Cheaper to Maintain</h3>
-                    <h3 class="benefits" style="text-align: right" onmouseover="hovmenu4()">Better for Health</h3>
-                    <h3 class="benefits" onmouseover="hovmenu5()">Quieter Ride</h3>
+                    <h3 class="benefits" onmouseover="hovmenu1()" onmouseout="outmenu1()">Savings</h3>
+                    <h3 class="benefits" style="text-align: right" onmouseover="hovmenu2()" onmouseout="outmenu2()">Environmental Impact</h3>
+                    <h3 class="benefits" onmouseover="hovmenu3()" onmouseout="outmenu3()">Cheaper to Maintain</h3>
+                    <h3 class="benefits" style="text-align: right" onmouseover="hovmenu4()" onmouseout="outmenu4()">Better for Health</h3>
+                    <h3 class="benefits" onmouseover="hovmenu5()" onmouseout="outmenu5()">Quieter Ride</h3>
                 </div>
             </div>
             <div class="beneinfo" id="ben1">
@@ -182,22 +182,22 @@
                     <span class="buildhead"><h3>Color</h3><h4>Select One</h4></span>
                     <div class="itemhold">
                         <div onclick="colorClick1()" class="item1"><img class="carcolor" id="col1" src="images/whitesel.png">
-                        <h5>White</h5>
+                        <h5 class="changemob">White</h5>
                         </div>
                         <div onclick="colorClick2()" class="item1"><img class="carcolor" id="col2" src="images/blackuns.png">
-                        <h5>Black</h5>
+                        <h5 class="changemob">Black</h5>
                         </div>
                         <div onclick="colorClick3()" class="item1"><img class="carcolor" id="col3" src="images/blueuns.png">
-                        <h5>Blue</h5>
+                        <h5 class="changemob">Blue</h5>
                         </div>
                         <div onclick="colorClick4()" class="item1"><img class="carcolor" id="col4" src="images/orangeuns.png">
-                        <h5>Orange</h5><h6>+ $1,000</h6>
+                        <h5 class="changemob">Orange</h5><h6>+ $1,000</h6>
                         </div>
                         <div onclick="colorClick5()" class="item1"><img class="carcolor" id="col5" src="images/reduns.png">
-                        <h5>Red</h5><h6>+ $1,000</h6>
+                        <h5 class="changemob">Red</h5><h6>+ $1,000</h6>
                         </div>
                         <div onclick="colorClick6()" class="item1"><img class="carcolor" id="col6" src="images/grayuns.png">
-                        <h5>Gray</h5><h6>+ $1,500</h6>
+                        <h5 class="changemob">Gray</h5><h6>+ $1,500</h6>
                         </div>
                     </div>
                 </div>
@@ -206,22 +206,22 @@
                     <span class="buildhead"><h3>Accessories</h3><h4>Select as Many as Preferred</h4></span>
                     <div class="itemhold">
                         <div onclick="extraClick1()" class="item2"><img class="extra" id="acc1" src="images/mats.png">
-                        <h5>Weather Mats</h5><h6>+ $120</h6>
+                        <h5 class="changemob">Weather Mats</h5><h6>+ $120</h6>
                         </div>
                         <div onclick="extraClick2()" class="item2"><img class="extra" id="acc2" src="images/rack.png">
-                        <h5>Bicycle Rack</h5><h6>+ $320</h6>
+                        <h5 class="changemob">Bicycle Rack</h5><h6>+ $320</h6>
                         </div>
                         <div onclick="extraClick3()" class="item2"><img class="extra" id="acc3" src="images/cargo.png">
-                        <h5>Cargo Cover</h5><h6>+ $65</h6>
+                        <h5 class="changemob">Cargo Cover</h5><h6>+ $65</h6>
                         </div>
                         <div onclick="extraClick4()" class="item2"><img class="extra" id="acc4" src="images/sunshield.png">
-                        <h5>Sunshade</h5><h6>+ $55</h6>
+                        <h5 class="changemob">Sunshade</h5><h6>+ $55</h6>
                         </div>
                         <div onclick="extraClick5()" class="item2"><img class="extra" id="acc5" src="images/kit.png">
-                        <h5>Emergency Kit</h5><h6>+ $50</h6>
+                        <h5 class="changemob">Emergency Kit</h5><h6>+ $50</h6>
                         </div>
                         <div onclick="extraClick6()" class="item2"><img class="extra" id="acc6" src="images/guards.png">
-                        <h5>Deflectors</h5><h6>+ $110</h6>
+                        <h5 class="changemob">Deflectors</h5><h6>+ $110</h6>
                         </div>
                     </div>
                 </div>
@@ -229,13 +229,13 @@
                 <div class="sixrows" id="sixr3">
                     <span class="buildhead"><h3>Trim</h3><h4>Select One</h4></span>
                     <div class="itemhold">
-                        <div class="item3"><h5 class="trimtype">Economy<input onclick="tOneClick()" checked id="t1" class="trimput" type="radio"></h5>
+                        <div class="item3"><h5 class="trimtype" class="changemob">Economy<input onclick="tOneClick()" checked id="t1" class="trimput" type="radio"></h5>
                         <p>For everyday transportation. Comes with only the base range and acceleration, but has a significant cost advantage.</p><h6>$42,000</h6>
                         </div>
-                        <div class="item3"><h5 class="trimtype">Performance<input onclick="tTwoClick()" id="t2" class="trimput" type="radio"></h5>
+                        <div class="item3"><h5 class="trimtype" class="changemob">Performance<input onclick="tTwoClick()" id="t2" class="trimput" type="radio"></h5>
                         <p>For the most empowered drive. Has extended range and up to 40% better acceleration than economy.</p><h6>$51,000</h6>
                         </div>
-                        <div class="item3"><h5 class="trimtype">Luxury<input onclick="tThreeClick()" id="t3" class="trimput" type="radio"></h5>
+                        <div class="item3"><h5 class="trimtype" class="changemob">Luxury<input onclick="tThreeClick()" id="t3" class="trimput" type="radio"></h5>
                         <p>For the best possible driving experience. In addition to performance-level specs, luxury includes smoother braking, improved A/C system and leather upholstery.</p><h6>$55,000</h6>
                         </div>
                     </div>
