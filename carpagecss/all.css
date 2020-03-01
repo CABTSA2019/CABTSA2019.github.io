@@ -951,6 +951,10 @@ clickable3:hover {
     width: 200px;
 }
 
+#shrink {
+    font-size: 18px;
+}
+
 #placehold {
     height: 400px;
     width: 400px;
