@@ -3,7 +3,43 @@ $(document).ready(function(){
     let scrollPosition = 0;
     scrollPosition = window.pageYOffset;
 
+     if ($( window ).width() < 1201) {
     var open = false;
+        $("#clickham").click(function(){
+        if (!open) {
+            open = true;
+            var leftvalue;
+            $("#ham-menu").css("visibility", "visible");
+            $("#ham-menu").css("width", "50vw");
+            $("#ham-menu").css("left", "100vw");
+            $("#ham").attr("src", "images/acksw.png");
+            $("#ham").css("width", "75px");
+            $("#dimmer").css("visibility", "visible");
+            $("#nav-pos").css("left", "100vw");
+            if ($( window ).width() > 900) {
+                $("#ham-menu").css("padding-right", "200px");
+                leftvalue = -30;
+            }
+            if ($( window ).width() < 901) {
+                $("#ham-menu").css("width", "calc(50vw + 200px)");
+                $("#ham-menu").css("padding-right", "120px");
+                leftvalue = -42;
+            }
+            $("#ham-menu").animate({left: leftvalue + "vw"}, "fast");
+            $("#nav-cont").css("width", "300px");
+        } else {
+            open = false;
+            $("#ham").attr("src", "images/blackham.png");
+            $("#ham").css("width", "90px");
+            $("#dimmer").css("visibility", "hidden");
+            $("#nav-pos").css("left", "100vw");
+            $("#ham-menu").css("padding-right", "0px");
+            $("#ham-menu").animate({left: '600px'}, "fast");
+            $("#nav-cont").css("width", "0px");
+        }
+    });
+    } else {
+        var open = false;
     $("#clickham").click(function(){
         if (!open) {
             open = true;
@@ -24,6 +60,7 @@ $(document).ready(function(){
             $("#nav-cont").css("width", "0px");
         }
     });
+    }
 
     var down = true;
 
@@ -76,8 +113,9 @@ $(document).ready(function(){
             x = 0;
         }
 
+        if ($( window ).width() > 1200) {
         if (x == 10 && !scrollOnce) {
-            if ( (pos < $("#scroll2").position().top && pos >= 0) && down && !scrollOnce) {
+            if ( (pos < $("#scroll2").position().top && pos >= -1000) && down && !scrollOnce) {
                 scrollOnce = true;
                 pos = $("#scroll2").position().top;
                 $("html, body").animate({ scrollTop: pos }, 1000);
@@ -116,6 +154,7 @@ $(document).ready(function(){
         $body.style.removeProperty('top');
         $body.style.removeProperty('width');
         window.scrollTo(0, pos);
+        }
     });
 
 });

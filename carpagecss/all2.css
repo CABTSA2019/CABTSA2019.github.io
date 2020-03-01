@@ -479,19 +479,26 @@ nav-cont {
 }
 
 #featimg {
+    height: 80vh;
+    max-height: 700px;
     position: absolute;
-    left: -400px;
+    top: calc(115vh);
+    left: -300px;
 }
 
 .popout {
     height: 100vh;
-    width: 300px;
+    width: 0px;
+    visibility: hidden;
     background-color: white;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-right: 20px;
+    bottom: -100vh;
+    left: 100vw;
 }
 
 #pop1 {
@@ -776,15 +783,24 @@ nav-cont {
 
 .benefits {
     width: 100%;
+    color: white;
+    background-color: #2C83DE;
+    height: 50px;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
 }
 
 .benefits:hover {
     cursor: pointer;
+    background-color: white;
+    color: #2C83DE;
 }
 
 .beneinfo {
     background-color: white;
-    height: 200px;
+    height: 150px;
     width: 300px;
     position: absolute;
     z-index: 2;
@@ -820,17 +836,24 @@ nav-cont {
     right: 2vw;
 }
 
-
 .featbar {
     background-color: white;
-    width: 80vw;
+    width: 85vw;
     height: 70px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    transition: color .5s, background-color .5s;
+}
+
+.mainfeat {
+    margin-right: 400px;
 }
 
 .featbar:hover {
     cursor: pointer;
+    color: white;
+    background-color: #2C83DE;
 }
 
 #clickable1 {
@@ -889,7 +912,7 @@ clickable3:hover {
 }
 
 .symbol {
-    width: 20vw;
+    width: calc(10vw + 10vh);
     max-width: 300px;
 }
 
@@ -904,7 +927,7 @@ clickable3:hover {
     justify-content: space-between;
     padding: 10px;
     align-items: center;
-    width: 26vw;
+    width: 40vw;
     height: 90vh;
     margin-right: calc(30vw - 360px);
 }
@@ -985,6 +1008,16 @@ clickable3:hover {
     width: 1px;
     background-color: white;
 }
+#fbar1 {
+    width: 90vw;
+}
+#specimg {
+    height: calc(100vh - 400px);
+    max-height: 550px;
+}
+#dtitle {
+    font-size: 10vh;
+}
 
 @media screen and (max-width: 1450px) {
     #threebotleft {
@@ -992,23 +1025,249 @@ clickable3:hover {
     }
 }
 
-@media screen and (max-width: 1300px) {
-    #safeinfo {
-        visibility: hidden;
-        width: 0px;
-    }
-    #mobtitle {
-        visibility: visible;
-    }
-}
-
 @media screen and (max-width: 1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    #fbar1 {
+        width: 100vw;
+    }
     #benepic {
         position: relative;
         right: 100px;
     }
-    #shield {
-        width: 60vw;
-        margin-left: 160px;
+    #navbar {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    #mobtitle {
+        visibility: visible;
+        height: 100px;
+        margin-top: 10px;
+    }
+    #safeinfo {
+        visibility: hidden;
+        width: 0px;
+    }
+    #externalgroup {
+        flex-direction: row;
+    }
+    .externaltext {
+        font-size: 20px;
+    }
+    .externallinksplit2 {
+        height: 80px;
+        width: 1px;
+    }
+    #exlinks {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .foottext {
+        font-size: 30px;
+    }
+    #footer {
+        justify-content: center;
+    }
+    #ham-menu {
+        left: 100vw;
+        width: 0px;
+        visibility: collapse;
+    }
+    #ham {
+        left: calc(100vw - 110px);
+        width: 90px;
+    }
+    #clickham {
+        left: calc(100vw - 110px);
+    }
+    .sidelink {
+        font-size: 60px;
+        text-align: right;
+    }
+    #featimg {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+    #longerbar {
+        width: 100vw;
+    }
+    .featbar {
+        width: 100vw;
+        height: 100px;
+        justify-content: flex-start;
+    }
+    .mainfeat {
+        font-size: 60px;
+        margin-right: 0px;
+        margin-left: 20px;
+        text-align: left;
+    }
+    #feathead {
+        width: 100vw;
+        margin-left: 0px;
+        text-align: center;
+    }
+    #scroll2 {
+        height: 160vh;
+    }
+    .popout {
+        width: 100vw;
+    }
+    #pop1 {
+        top: 190vh;
+        height: 65vh;
+        visibility: visible;
+        left: 0px;
+    }
+    .anihide1 {
+        visibility: visible;
+    }
+    #pop2 {
+        top: 190vh;
+        height: 65vh;
+    }
+    #pop3 {
+        top: 190vh;
+        height: 65vh;
+    }
+    #symbolhold {
+        flex-direction: column;
+    }
+    .captioned {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .symbol {
+        width: 200px;
+        margin-top: 10px;
+    }
+    .cap {
+        width: auto;
+    }
+    #specimg {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+    #advcontainer {
+        opacity: 0;
+        left: 0px;
+        top: 250vh;
+        height: 140vh;
+        z-index: -5;
+    }
+    #scroll3 {
+        height: 140vh;
+    }
+    #threebot {
+        flex-direction: column;
+    }
+    #threebotleft {
+        height: 80vh;
+        align-items: center;
+        margin-left: 0px;
+    }
+    #ordercontainer {
+        opacity: 0;
+        left: 0px;
+        height: 140vh;
+        z-index: -5;
+    }
+    #benepic {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+    .beneinfo {
+        width: 450px;
+    }
+    #ben1 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben2 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben3 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben4 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben5 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben6 {
+        top: 570vh;
+        left: 30px;
+    }
+    #scroll6 {
+        flex-direction: column;
+    }
+    #6left {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .sixrows {
+        justify-content: center;
+        width: calc(100vw - 40px);
+    }
+    .sixdivider {
+        width: 100vw;
+    }
+    .changemob {
+        font-size: 20px;
+        text-align: center;
+    }
+    #sixrighttop {
+        height: 30vh;
+    }
+    #vertdiv {
+        width: 100vw;
+        height: 10px;
+        margin-top: 5vh;
+    }
+    #ordercontainer {
+        height: 82vh;
+        top: 718vh;
+    }
+    .buildhead {
+        width: calc(100vw - 40px);
+    }
+    #mobchange1 {
+        text-align: right;
+    }
+    #calculate {
+        width: 200px;
     }
 }
+
+@media screen and (max-width: 1200px and min-width: 900px) {
+    #shield {
+        width: 60vw;
+        margin-left: 6vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #shield {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-left: 4vh;
+    }
+}
+

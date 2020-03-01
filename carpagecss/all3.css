@@ -152,7 +152,7 @@ nav-cont {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
     margin-right: 20px;
 }
 
@@ -222,7 +222,7 @@ nav-cont {
 }
 
 #tworight {
-    width: 40vw;
+    width: 60vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -287,6 +287,12 @@ nav-cont {
     color: white;
 }
 
+#twoimg {
+    width: calc(15vw + 45vh);
+}
+
+
+
 @media screen and (max-width: 1450px) {
     #threebotleft {
         margin-left: 15px;
@@ -304,12 +310,261 @@ nav-cont {
 }
 
 @media screen and (max-width: 1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    #fbar1 {
+        width: 100vw;
+    }
     #benepic {
         position: relative;
         right: 100px;
     }
-    #shield {
-        width: 60vw;
-        margin-left: 160px;
+    #navbar {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    #mobtitle {
+        visibility: visible;
+        height: 100px;
+        margin-top: 10px;
+    }
+    #safeinfo {
+        visibility: hidden;
+        width: 0px;
+    }
+    #externalgroup {
+        flex-direction: row;
+    }
+    .externaltext {
+        font-size: 20px;
+    }
+    .externallinksplit2 {
+        height: 80px;
+        width: 1px;
+    }
+    #exlinks {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .foottext {
+        font-size: 30px;
+    }
+    #footer {
+        justify-content: center;
+    }
+    #ham-menu {
+        left: 100vw;
+        width: 0px;
+        visibility: collapse;
+    }
+    #ham {
+        left: calc(100vw - 110px);
+        width: 90px;
+    }
+    #clickham {
+        left: calc(100vw - 110px);
+    }
+    .sidelink {
+        font-size: 60px;
+        text-align: right;
+    }
+    #featimg {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+    #longerbar {
+        width: 100vw;
+    }
+    .featbar {
+        width: 100vw;
+        height: 100px;
+        justify-content: flex-start;
+    }
+    .mainfeat {
+        font-size: 60px;
+        margin-right: 0px;
+        margin-left: 20px;
+        text-align: left;
+    }
+    #feathead {
+        width: 100vw;
+        margin-left: 0px;
+        text-align: center;
+    }
+    #scroll2 {
+        flex-direction: column;
+        height: 130vh;
+    }
+    #twoleft {
+        width: 100vw;
+    }
+    #tworight {
+        flex-direction: row;
+        width: 100vw;
+        margin-top: 15px;
+    }
+    .popout {
+        width: 100vw;
+    }
+    #pop1 {
+        top: 190vh;
+        height: 65vh;
+        visibility: visible;
+        left: 0px;
+    }
+    .anihide1 {
+        visibility: visible;
+    }
+    #pop2 {
+        top: 190vh;
+        height: 65vh;
+    }
+    #pop3 {
+        top: 190vh;
+        height: 65vh;
+    }
+    #symbolhold {
+        flex-direction: column;
+    }
+    .captioned {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .symbol {
+        width: 200px;
+        margin-top: 10px;
+    }
+    .cap {
+        width: auto;
+    }
+    #specimg {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+    #advcontainer {
+        opacity: 0;
+        left: 0px;
+        top: 250vh;
+        height: 140vh;
+        z-index: -5;
+    }
+    #scroll3 {
+        height: 140vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #threeleft {
+        width: calc(100vw - 30px);
+        margin: 15px;
+        align-items: center;
+        margin-left: 0px;
+    }
+    #ordercontainer {
+        opacity: 0;
+        left: 0px;
+        height: 140vh;
+        z-index: -5;
+    }
+    #benepic {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+    .beneinfo {
+        width: 450px;
+    }
+    #ben1 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben2 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben3 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben4 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben5 {
+        top: 570vh;
+        left: 30px;
+    }
+    #ben6 {
+        top: 570vh;
+        left: 30px;
+    }
+    #scroll6 {
+        flex-direction: column;
+    }
+    #6left {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .sixrows {
+        justify-content: center;
+        width: calc(100vw - 40px);
+    }
+    .sixdivider {
+        width: 100vw;
+    }
+    .changemob {
+        font-size: 20px;
+        text-align: center;
+    }
+    #sixrighttop {
+        height: 30vh;
+    }
+    #vertdiv {
+        width: 100vw;
+        height: 10px;
+        margin-top: 5vh;
+    }
+    #ordercontainer {
+        height: 82vh;
+        top: 718vh;
+    }
+    .buildhead {
+        width: calc(100vw - 40px);
+    }
+    #mobchange1 {
+        text-align: right;
+    }
+    #calculate {
+        width: 200px;
+    }
+    #threeright {
+        width: 100vw;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #disappearpls {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+    #newvtext {
+        width: 90vw;
+    }
+    #cycldiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
     }
 }

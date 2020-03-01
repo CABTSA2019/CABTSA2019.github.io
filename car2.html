@@ -14,7 +14,7 @@
     <div id="nav-pos">
     <div id="nav-cont">
         <div id="clickham">
-            <img src="images/blackham.png" id="ham">
+            <img src="images/whiteham.png" id="ham">
         </div>
     <div id="ham-menu">
         <a class="sidelink" href="index.html">HOME</a>
@@ -22,7 +22,7 @@
         <a class="sidelink" href="car2.html">CAR 2</a>
         <a class="sidelink" href="car3.html">NEXT UP</a>
         <a class="sidelink" href="OUR_COMPANY_PAGE/root_folder/index.html">OUR COMPANY</a>
-        <a class="sidelink">SUPPORT</a>
+        <a class="sidelink" href="OUR_COMPANY_PAGE/root_folder/support.html">SUPPORT</a>
         <div id="externalgroup">
                 <p class="externaltext" id="desc"><a class="feet" href="index.html">DESIGN BRIEF</a></p>
                 <hr class="externallinksplit2">
@@ -47,9 +47,9 @@
             <h2 id="feathead" class="givemargin">FEATURES</h2>
             <img id="featimg" src="images/car2side.png">
             <div id="barcont">
-                <div class="featbar" onclick="popout1()" style="width: 90vw"><h3 class="mainfeat" style="margin-left: 300px;">Self-Driving</h3><div id="clickable1"></div></div>
-                <div class="featbar" onclick="popout2()"><h3 class="mainfeat" style="margin-left: 380px;">DelEV App</h3><div id="clickable2"></div></div>
-                <div class="featbar" onclick="popout3()"><h3 class="mainfeat" style="margin-left: 320px;">Wifi Hotspot</h3><div id="clickable3"></div></div>
+                <div class="featbar" onclick="popout1()" id="fbar1"><h3 class="mainfeat">Self-Driving</h3><div id="clickable1"></div></div>
+                <div class="featbar" onclick="popout2()"><h3 class="mainfeat">DelEV App</h3><div id="clickable2"></div></div>
+                <div class="featbar" onclick="popout3()"><h3 class="mainfeat">Wifi Hotspot</h3><div id="clickable3"></div></div>
             </div>
             <div id="pop1" class="popout">
                 <h3 id="selftitle">(Automated) Self-Driving</h3>
@@ -148,11 +148,11 @@
             <div id="advinfo">
                 <h2>BENEFITS</h2>
                 <div id="benecont">
-                    <h3 class="benefits" onmouseover="hovmenu1()">Savings</h3>
-                    <h3 class="benefits" style="text-align: right" onmouseover="hovmenu2()">Environmental Impact</h3>
-                    <h3 class="benefits" onmouseover="hovmenu3()">Cheaper to Maintain</h3>
-                    <h3 class="benefits" style="text-align: right" onmouseover="hovmenu4()">Better for Health</h3>
-                    <h3 class="benefits" onmouseover="hovmenu5()">Quieter Ride</h3>
+                    <h3 class="benefits" onmouseover="hovmenu1()" onmouseout="outmenu1()">Savings</h3>
+                    <h3 class="benefits" style="text-align: right" onmouseover="hovmenu2()" onmouseout="outmenu2()">Environmental Impact</h3>
+                    <h3 class="benefits" onmouseover="hovmenu3()" onmouseout="outmenu3()">Cheaper to Maintain</h3>
+                    <h3 class="benefits" style="text-align: right" onmouseover="hovmenu4()" onmouseout="outmenu4()">Better for Health</h3>
+                    <h3 class="benefits" onmouseover="hovmenu5()" onmouseout="outmenu5()">Quieter Ride</h3>
                 </div>
             </div>
             <div class="beneinfo" id="ben1">
@@ -170,12 +170,12 @@
             <div class="beneinfo" id="ben5">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna ali</p>
             </div>
-            <img id="benepic" src="images/car1side.png">
+            <img id="benepic" src="images/car2side.png">
         </div>
         <div class="carscroll" id="scroll6">
             <div id="6left">
                 <div id="6top">
-                    <h2 class="givemargin">DESIGN YOURS</h2>
+                    <h2 id="ddtitle" class="givemargin">DESIGN YOURS</h2>
                 </div>
                 <div class="sixrows" id="sixr1">
                    <hr class="sixdivider">

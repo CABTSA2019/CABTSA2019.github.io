@@ -18,11 +18,13 @@ $(document).ready(function(){
             $("#nav-pos").css("left", "100vw");
             if ($( window ).width() > 900) {
                 $("#ham-menu").css("padding-right", "200px");
+                leftvalue = -30;
             }
-            if ($("#scroll1").width() < 901) {
+            if ($( window ).width() < 901) {
                 $("#ham-menu").css("width", "calc(50vw + 200px)");
+                $("#ham-menu").css("padding-right", "120px");
+                leftvalue = -38;
             }
-            leftvalue = -30;
             $("#ham-menu").animate({left: leftvalue + "vw"}, "fast");
             $("#nav-cont").css("width", "300px");
         } else {

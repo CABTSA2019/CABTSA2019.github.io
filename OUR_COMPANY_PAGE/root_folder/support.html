@@ -13,7 +13,6 @@
         }
 
         $(document).ready(function(){
-            if ($( window ).width() < 1201) {
     var open = false;
         $("#clickham").click(function(){
         if (!open) {
@@ -27,18 +26,26 @@
             $("#dimmer").css("visibility", "visible");
             $("#nav-pos").css("left", "100vw");
             if ($( window ).width() > 900) {
-                $("#ham-menu").css("padding-right", "50px");
+                $("#ham-menu").css("padding-right", "200px");
                 $("#nav-cont").css("width", "50vw");
-                leftvalue = -10;
+                leftvalue = -30;
+                $("#clickham").css("position", "relative");
+                $("#clickham").css("right", "calc(50vw - 120px)");
+                $("#clickham").css("top", "-70px");
+                $("#ham").css("right", "calc(50vw - 120px)");
             }
             if ($( window ).width() < 901) {
                 $("#ham-menu").css("width", "calc(50vw + 200px)");
                 $("#ham-menu").css("padding-right", "120px");
                 $("#nav-cont").css("width", "calc(50vw + 200px)");
-                leftvalue = -18;
+                leftvalue = -38;
+                $("#clickham").css("position", "relative");
+                $("#clickham").css("right", "calc(50vw - 75px)");
+                $("#clickham").css("top", "-70px");
+                $("#ham").css("right", "calc(50vw - 75px)");
             }
             $("#ham-menu").animate({left: leftvalue + "vw"}, "fast");
-
+            $("#nav-cont").css("width", "300px");
         } else {
             open = false;
             $("#ham").attr("src", "../../images/blackham.png");
@@ -48,31 +55,11 @@
             $("#ham-menu").css("padding-right", "0px");
             $("#ham-menu").animate({left: '600px'}, "fast");
             $("#nav-cont").css("width", "0px");
+            $("#clickham").css("right", "0px");
+            $("#clickham").css("top", "0px");
+            $("#ham").css("right", "0px");
         }
     });
-    } else {
-        var open = false;
-    $("#clickham").click(function(){
-        if (!open) {
-            open = true;
-            $("#ham-menu").css("left", "calc(100vw + 300px)")
-            $("#ham").attr("src", "images/acksw.png");
-            $("#ham").css("width", "38px");
-            $("#dimmer").css("visibility", "visible");
-            $("#nav-pos").css("left", "0vw");
-            $("#ham-menu").animate({left: '100vw'}, "fast");
-            $("#nav-cont").css("width", "300px");
-        } else {
-            open = false;
-            $("#ham").attr("src", "images/blackham.png");
-            $("#ham").css("width", "50px");
-            $("#dimmer").css("visibility", "hidden");
-            $("#nav-pos").css("left", "100vw");
-            $("#ham-menu").animate({left: '300px'}, "fast");
-            $("#nav-cont").css("width", "0px");
-        }
-    });
-    }
         });
     </script>
     <style>
@@ -106,7 +93,7 @@
         <a class="headlink" href="support.html">SUPPORT</a>
         </div>
     </div>
-   <div class="header"><p id="ourcompany">OUR COMPANY</p></div>
+   <div class="header"><p id="ourcompany">SUPPORT</p></div>
    <div id="dimmer"></div>
     <div id="nav-pos">
     <div id="nav-cont">
@@ -131,23 +118,35 @@
     </div>
     </div>
    <div id="content">
-   <h1>Mission</h1>
-       <table class="table">
-           <tr><td><h3>Environment-</h3></td>
-           <td><div class="body"><p>Our company believes in changing our world one action at a time. The environment and providing a clean method of transportation for ordinary people is our goal. Electric vehicles have no combustion and no tailpipe emissions, so our customers don’t have to worry about their impact on air pollution. In the U.S. alone, transportation makes up 29% of total greenhouse gas emissions, and one of our main goals as a company is to be able to provide an Earth-friendly transportation option.</p></div></td></tr>
-       <tr><td><h3>Safe/Affordable Transportation-</h3></td>
-    <td><div class="body"><p>Our other primary goal is to have safe vehicles and to cater to people of all incomes and socio-economic statuses. Our electric vehicles are for everyone. With three models and more in development, our mission is to aid people in creating a more eco-conscious world.</p></div></td></tr>
-           </table>
+   <h1>Where we service/sell</h1>
+    <div id="service" class="body"><p>Our company is based in Wilmington, Delaware, but we sell all over the United States. International customers can also order online. </p>
+    <img src="../../images/blueuns.png">
+    </div>
 
     <div id= "midline"></div>
-    <h1>Accomplishments</h1>
-        <table class="table"><tr><td><h3>Carbon Impact-</h3></td>
-    <td><div class="body"><p>The carbon footprint of electric cars is up to 40% lower than gasoline-powered cars and our vehicles have up to 70% less carbon footprint because of our manufacturing techniques. In all of our manufacturing facilities, we use carbon neutral power sources such as solar and wind. Our dealership locations also run on either solar, wind, or nuclear energy, and we will never use coal within our manufacturing processes. We inform our drivers about the best places to charge, where the electricity is generated from carbon neutral, renewable sources. Our drivers are changing the world for the better. </p></div></td></tr>
-        <tr><td><h3>Innovations-</h3></td>
-    <td><div class="body"><p>Lorem ipsumasdfhsdhfjghkl asfjhglkasjhgk ljadshfkljdshf kldjshfajkdfha sdhfkldsjhflksd jahfklsdjhflks dajhfklsdjhfl kasdjhfk ldsjfhlakd sjfhasdlkfhj</p></div></td></tr>
-        <tr><td><h3>Donations-</h3></td>
-    <td><div class="body"><p>We donate a portion of our profits to environmental advocacy organizations such as the World Wildlife Fund and the Climateworks Foundation. As of 2019, we have contributed more than one million dollars in total.</p></div></td></tr>
-    </table>
+    <h1>FAQ</h1>
+
+    <div id="qanda">
+        <h3>How do I buy a car?</h3>
+        <div class="body"><p>You can order a car through our website or through a physical dealership. We have locations across the country. Inquire them individually about currently in stock vehicles.</p></div>
+        <h3>How do I pay for a car?</h3>
+        <div class="body"><p>Through our website, we accept all major credit cards and PayPal. When ordering online, you will be connected to a real person to talk you through any questions you may have about the process of purchasing a vehicle. Each dealership will also have recommendations for payment plans.</p></div>
+        <h3>How do I call your company?</h3>
+        <div class="body"><p>Our phone number is (302)000-000. We are available 9am-8pm EST Monday to Saturday. On Sunday, we are available 11am-6pm EST. We are available through email all times of the day. Our email is carcompanyname@websitename.org.</p></div>
+        <h3>How do I charge my car?</h3>
+        <div class="body"><p><a href="https://www.plugshare.com/">https://www.plugshare.com/</a> is an interactive map of charging stations across the world.
+If you want to charge at home, all our cars come with a 110-volt-compatible home connector kit you can connect to your home outlets and charge that way.</p></div>
+        <h3>How can I repair my car?</h3>
+        <div class="body"><p>All our models come with a one year full coverage warranty. We also guarantee that at every dealership, there is at least one mechanic specialized in repairing our company’s cars with company approved materials..</p></div>
+        <h3>What kind of warranties do our cars come with?</h3>
+        <div class="body"><p>We have two levels of warranty one can purchase in addition to the base warranty. In our base warranty, we guarantee one full year of comprehensive coverage. All of our added warranty plans pay monthly.
+        <br><br>&nbsp;&nbsp;&nbsp;&nbsp; Added tier 1: 5 year warranty comprehensive coverage and 8 year free battery replacement
+        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;Added tier 2: 10 year warranty comprehensive coverage and 15 year free battery replacement
+</p></div>
+        <h3>What kind of tax incentives will I receive?</h3>
+        <div class="body"><p>The United States federal government offers a tax credit of $2500-$7500 per new electric vehicle purchased. Your state may have additional incentives. Canada has an incentive of $2500-$5000 which will be applied at the point-of-sale. Other countries have their own laws regarding this subject.</p></div>
+    </div>
+
     </div>
     <div id="footer">
             <div id="footgroup">
