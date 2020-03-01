@@ -26,37 +26,64 @@
         }
 
         $(document).ready(function(){
-            var open = false;
-            $("#clickham").click(function(){
-            if (!open) {
-                open = true;
-                var leftvalue;
-                $("#ham-menu").css("left", "150vw")
-                $("#ham").attr("src", "images/acksw.png");
-                $("#ham").css("width", "75px");
-                $("#dimmer").css("visibility", "visible");
-                $("#nav-pos").css("left", "100vw");
-                if ($( window ).width() > 600) {
+            if ($( window ).width() < 1201) {
+    var open = false;
+        $("#clickham").click(function(){
+        if (!open) {
+            open = true;
+            var leftvalue;
+            $("#ham-menu").css("visibility", "visible");
+            $("#ham-menu").css("width", "50vw");
+            $("#ham-menu").css("left", "100vw");
+            $("#ham").attr("src", "images/acksw.png");
+            $("#ham").css("width", "75px");
+            $("#dimmer").css("visibility", "visible");
+            $("#nav-pos").css("left", "100vw");
+            if ($( window ).width() > 900) {
                 $("#ham-menu").css("padding-right", "200px");
-                }
-                if ($( window ).width() < 600) {
-                    leftvalue = -50;
-                } else {
-                    leftvalue = -30;
-                }
-                $("#ham-menu").animate({left: leftvalue + "vw"}, "fast");
-                $("#nav-cont").css("width", "300px");
-            } else {
-                open = false;
-                $("#ham").attr("src", "images/blackham.png");
-                $("#ham").css("width", "90px");
-                $("#dimmer").css("visibility", "hidden");
-                $("#nav-pos").css("left", "100vw");
-                $("#ham-menu").css("padding-right", "0px");
-                $("#ham-menu").animate({left: '600px'}, "fast");
-                $("#nav-cont").css("width", "0px");
+                leftvalue = -30;
             }
-        });
+            if ($( window ).width() < 901) {
+                $("#ham-menu").css("width", "calc(50vw + 200px)");
+                $("#ham-menu").css("padding-right", "120px");
+                leftvalue = -38;
+            }
+            $("#ham-menu").animate({left: leftvalue + "vw"}, "fast");
+            $("#nav-cont").css("width", "300px");
+        } else {
+            open = false;
+            $("#ham").attr("src", "images/blackham.png");
+            $("#ham").css("width", "90px");
+            $("#dimmer").css("visibility", "hidden");
+            $("#nav-pos").css("left", "100vw");
+            $("#ham-menu").css("padding-right", "0px");
+            $("#ham-menu").animate({left: '600px'}, "fast");
+            $("#nav-cont").css("width", "0px");
+        }
+    });
+    } else {
+        var open = false;
+    $("#clickham").click(function(){
+        if (!open) {
+            open = true;
+            $("#ham-menu").css("left", "calc(100vw + 300px)")
+            $("#ham").attr("src", "images/acksw.png");
+            $("#ham").css("width", "38px");
+            $("#dimmer").css("visibility", "visible");
+            $("#nav-pos").css("left", "0vw");
+            $("#ham-menu").animate({left: '100vw'}, "fast");
+            $("#nav-cont").css("width", "300px");
+        } else {
+            open = false;
+            $("#ham").attr("src", "images/blackham.png");
+            $("#ham").css("width", "50px");
+            $("#dimmer").css("visibility", "hidden");
+            $("#nav-pos").css("left", "100vw");
+            $("#ham-menu").animate({left: '300px'}, "fast");
+            $("#nav-cont").css("width", "0px");
+        }
+    });
+    }
         });
     </script>
     <style>

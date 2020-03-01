@@ -510,7 +510,7 @@ nav-cont {
     width: 75vh;
 }
 
-#6top {
+#sixtop {
     height: 10vh;
 }
 
@@ -536,8 +536,8 @@ nav-cont {
 
 .carcolor {
     width: 10vw;
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .item1 {
@@ -608,6 +608,18 @@ nav-cont {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#dtitle {
+    font-size: 10vh;
+}
+
+#sixr1 {
+    height: 28vh;
+}
+
+#sixr2 {
+    height: 28vh;
 }
 
 #sixrighttop {
@@ -1228,6 +1240,15 @@ clickable3:hover {
     #ordercontainer {
         height: 82vh;
         top: 718vh;
+    }
+    .buildhead {
+        width: calc(100vw - 40px);
+    }
+    #mobchange1 {
+        text-align: right;
+    }
+    #calculate {
+        width: 200px;
     }
 }
 
