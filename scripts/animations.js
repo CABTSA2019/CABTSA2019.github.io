@@ -116,7 +116,7 @@ $(document).ready(function(){
 
         if ($( window ).width() > 1200) {
         if (x == 10 && !scrollOnce) {
-            if ( (pos < $("#scroll2").position().top && pos >= 0) && down && !scrollOnce) {
+            if ( (pos < $("#scroll2").position().top && pos >= -1000) && down && !scrollOnce) {
                 scrollOnce = true;
                 pos = $("#scroll2").position().top;
                 $("html, body").animate({ scrollTop: pos }, 1000);

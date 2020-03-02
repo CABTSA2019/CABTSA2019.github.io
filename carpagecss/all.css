@@ -414,6 +414,10 @@ nav-cont {
     align-items: center;
 }
 
+.lareg {
+    font-size: 25px;
+}
+
 .onblack {
     color: white;
     opacity: 0;
@@ -611,7 +615,7 @@ nav-cont {
 }
 
 #dtitle {
-    font-size: 10vh;
+    font-size: 8vh;
 }
 
 #sixr1 {

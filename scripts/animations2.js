@@ -115,7 +115,7 @@ $(document).ready(function(){
 
         if ($( window ).width() > 1200) {
         if (x == 10 && !scrollOnce) {
-            if ( (pos < $("#scroll2").position().top && pos >= 0) && down && !scrollOnce) {
+            if ( (pos < $("#scroll2").position().top && pos >= -1000) && down && !scrollOnce) {
                 scrollOnce = true;
                 pos = $("#scroll2").position().top;
                 $("html, body").animate({ scrollTop: pos }, 1000);
@@ -210,7 +210,7 @@ $(document).ready(function(){
 var sum = 0;
 var coloradd = 0;
 var extradd = 0;
-var trimadd = 42000;
+var trimadd = 83000;
 
 function resetOne() {
     $("#col1").attr("src", "images/whiteuns.png");
@@ -340,21 +340,21 @@ function tOneClick() {
     $("#t1").prop("checked", true);
     $("#t2").prop("checked", false);
     $("#t3").prop("checked", false);
-    trimadd = 42000;
+    trimadd = 83000;
 }
 
 function tTwoClick() {
     $("#t1").prop("checked", false);
     $("#t2").prop("checked", true);
     $("#t3").prop("checked", false);
-    trimadd = 51000;
+    trimadd = 89000;
 }
 
 function tThreeClick() {
     $("#t1").prop("checked", false);
     $("#t2").prop("checked", false);
     $("#t3").prop("checked", true);
-    trimadd = 55000;
+    trimadd = 94000;
 }
 
 var reg = true;
