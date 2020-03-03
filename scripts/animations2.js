@@ -3,6 +3,31 @@ $(document).ready(function(){
     let scrollPosition = 0;
     scrollPosition = window.pageYOffset;
 
+    var stupid = false;
+
+    function BrowserDetection() {
+        //Check if browser is IE
+        if (navigator.userAgent.search("MSIE") & gt; = 0) {
+            stupid = true;
+        }
+        //Check if browser is Chrome
+        else if (navigator.userAgent.search("Chrome") & gt; = 0) {
+            stupid = true;
+        }
+        //Check if browser is Firefox
+        else if (navigator.userAgent.search("Firefox") & gt; = 0) {
+            stupid = false;
+        }
+        //Check if browser is Safari
+        else if (navigator.userAgent.search("Safari") & gt; = 0 & amp; & amp; navigator.userAgent.search("Chrome") & lt; 0) {
+            stupid = true;
+        }
+        //Check if browser is Opera
+        else if (navigator.userAgent.search("Opera") & gt; = 0) {
+            stupid = false;
+        }
+    }
+
     if ($( window ).width() < 1201) {
     var open = false;
         $("#clickham").click(function(){
@@ -113,7 +138,7 @@ $(document).ready(function(){
             x = 0;
         }
 
-        if ($( window ).width() > 1200) {
+        if ($( window ).width() > 1200 && stupid) {
         if (x == 10 && !scrollOnce) {
             if ( (pos < $("#scroll2").position().top && pos >= -1000) && down && !scrollOnce) {
                 scrollOnce = true;
