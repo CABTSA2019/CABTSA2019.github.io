@@ -9,11 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
     <script type="application/javascript">
         function logoClick() {
-            $(location).attr('href', "index.html");
+            $(location).attr('href', "../../index.html");
         }
 
         $(document).ready(function(){
-            if ($( window ).width() < 1201) {
     var open = false;
         $("#clickham").click(function(){
         if (!open) {
@@ -27,18 +26,26 @@
             $("#dimmer").css("visibility", "visible");
             $("#nav-pos").css("left", "100vw");
             if ($( window ).width() > 900) {
-                $("#ham-menu").css("padding-right", "50px");
+                $("#ham-menu").css("padding-right", "200px");
                 $("#nav-cont").css("width", "50vw");
-                leftvalue = -10;
+                leftvalue = -30;
+                $("#clickham").css("position", "relative");
+                $("#clickham").css("right", "calc(50vw - 120px)");
+                $("#clickham").css("top", "-70px");
+                $("#ham").css("right", "calc(50vw - 120px)");
             }
             if ($( window ).width() < 901) {
                 $("#ham-menu").css("width", "calc(50vw + 200px)");
                 $("#ham-menu").css("padding-right", "120px");
                 $("#nav-cont").css("width", "calc(50vw + 200px)");
-                leftvalue = -18;
+                leftvalue = -38;
+                $("#clickham").css("position", "relative");
+                $("#clickham").css("right", "calc(50vw - 75px)");
+                $("#clickham").css("top", "-70px");
+                $("#ham").css("right", "calc(50vw - 75px)");
             }
             $("#ham-menu").animate({left: leftvalue + "vw"}, "fast");
-
+            $("#nav-cont").css("width", "300px");
         } else {
             open = false;
             $("#ham").attr("src", "../../images/blackham.png");
@@ -48,31 +55,11 @@
             $("#ham-menu").css("padding-right", "0px");
             $("#ham-menu").animate({left: '600px'}, "fast");
             $("#nav-cont").css("width", "0px");
+            $("#clickham").css("right", "0px");
+            $("#clickham").css("top", "0px");
+            $("#ham").css("right", "0px");
         }
     });
-    } else {
-        var open = false;
-    $("#clickham").click(function(){
-        if (!open) {
-            open = true;
-            $("#ham-menu").css("left", "calc(100vw + 300px)")
-            $("#ham").attr("src", "images/acksw.png");
-            $("#ham").css("width", "38px");
-            $("#dimmer").css("visibility", "visible");
-            $("#nav-pos").css("left", "0vw");
-            $("#ham-menu").animate({left: '100vw'}, "fast");
-            $("#nav-cont").css("width", "300px");
-        } else {
-            open = false;
-            $("#ham").attr("src", "images/blackham.png");
-            $("#ham").css("width", "50px");
-            $("#dimmer").css("visibility", "hidden");
-            $("#nav-pos").css("left", "100vw");
-            $("#ham-menu").animate({left: '300px'}, "fast");
-            $("#nav-cont").css("width", "0px");
-        }
-    });
-    }
         });
     </script>
     <style>
@@ -114,12 +101,12 @@
             <img src="../../images/blackham.png" id="ham" style="width: 90px; height: 75px">
         </div>
     <div id="ham-menu">
-        <a class="sidelink" href="index.html">HOME</a>
-        <a class="sidelink" href="car1.html">MODEL 1</a>
-        <a class="sidelink" href="car2.html">MODEL 2</a>
-        <a class="sidelink" href="car3.html">NEXT UP</a>
-        <a class="sidelink" href="OUR_COMPANY_PAGE/root_folder/index.html">OUR COMPANY</a>
-        <a class="sidelink" href="OUR_COMPANY_PAGE/root_folder/support.html">SUPPORT</a>
+        <a class="sidelink" href="../../index.html">HOME</a>
+        <a class="sidelink" href="../../car1.html">MODEL 1</a>
+        <a class="sidelink" href="../../car2.html">MODEL 2</a>
+        <a class="sidelink" href="../../car3.html">NEXT UP</a>
+        <a class="sidelink" href="index.html">OUR COMPANY</a>
+        <a class="sidelink" href="support.html">SUPPORT</a>
         <div id="externalgroup">
                 <p class="externaltext" id="desc"><a class="feet" href="index.html">DESIGN BRIEF</a></p>
                 <hr class="externallinksplit2">
