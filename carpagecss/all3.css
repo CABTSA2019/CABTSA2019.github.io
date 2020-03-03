@@ -238,7 +238,7 @@ nav-cont {
 }
 
 #threeright {
-    background-image: url(/images/future.png);
+    background-image: url(../images/future.png);
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;

@@ -760,7 +760,7 @@ nav-cont {
 }
 
 #advinfo {
-    height: calc(100vh - 270px);
+    height: calc(100vh - 320px);
     margin-left: 15px;
     display: flex;
     flex-direction: column;
@@ -932,9 +932,9 @@ clickable3:hover {
     justify-content: space-between;
     padding: 10px;
     align-items: center;
-    width: 40vw;
+    width: 34vw;
     height: 90vh;
-    margin-right: calc(30vw - 360px);
+    margin-right: 20px;
 }
 
 #mobtitle {
@@ -942,13 +942,19 @@ clickable3:hover {
 }
 
 #shield {
-    margin-left: calc(11vh + 5vw);
+    margin-left: calc(11vh + 6vw);
     width: 670px;
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 13vh;
+}
+
+#shieldtitle {
+    text-decoration: underline;
+    text-decoration-style: solid;
 }
 
 #award {
@@ -971,6 +977,7 @@ clickable3:hover {
 }
 
 .shieldtext {
+    margin-top: 10px;
     color: white;
 }
 
@@ -1027,10 +1034,34 @@ clickable3:hover {
 #longerbar {
     width: 90vw;
 }
+.rpad {
+    padding-right: 5px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1600px) {
+    #safeinfo {
+        margin-right: calc(30vw - 360px);
+    }
+}
 
 @media screen and (max-width: 1450px) {
     #threebotleft {
         margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #safeinfo {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+    #mobtitle {
+        visibility: visible;
+        height: 100px;
+        margin-top: 10px;
+        color: white;
     }
 }
 
@@ -1047,11 +1078,6 @@ clickable3:hover {
         visibility: hidden;
         height: 0px;
         width: 0px;
-    }
-    #mobtitle {
-        visibility: visible;
-        height: 100px;
-        margin-top: 10px;
     }
     #safeinfo {
         visibility: hidden;
@@ -1274,5 +1300,9 @@ clickable3:hover {
         align-items: center;
         width: 100vw;
         margin-left: 4vh;
+    }
+    #scroll4 {
+        background-image: none;
+        background-color: #2C83DE;
     }
 }
