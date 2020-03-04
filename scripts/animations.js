@@ -19,7 +19,7 @@ $(document).ready(function(){
             stupid = false;
         }
         //Check if browser is Safari
-        else if (navigator.userAgent.search("Safari") & gt = 0 & amp; & amp; navigator.userAgent.search("Chrome") & lt; 0) {
+        else if (navigator.userAgent.search("Safari") & gt = 0 & amp & amp navigator.userAgent.search("Chrome") & lt 0) {
             stupid = true;
         }
         //Check if browser is Opera
