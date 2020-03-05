@@ -164,6 +164,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
 #nav-pos {
     position: fixed;
@@ -290,4 +292,7 @@ nav-cont {
         width: 0px;
         height: 0px;
     }
+}
+#map {
+    width: 40vw;
 }

@@ -942,8 +942,8 @@ clickable3:hover {
 }
 
 #shield {
-    margin-left: calc(11vh + 6vw);
-    width: 670px;
+    margin-left: calc(35vh - 10vw);
+    width: calc(40vh + 20vw);
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -979,13 +979,14 @@ clickable3:hover {
 .shieldtext {
     margin-top: 10px;
     color: white;
+    font-size: 28px;
 }
 
 #footer {
     display: flex;
     align-self: flex-end;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: 120px;
     background-color: black;

@@ -5,27 +5,51 @@ $(document).ready(function(){
 
     var stupid = false;
 
-    function BrowserDetection() {
-        //Check if browser is IE
-        if (navigator.userAgent.search("MSIE") & gt = 0) {
-            stupid = true;
-        }
-        //Check if browser is Chrome
-        else if (navigator.userAgent.search("Chrome") & gt = 0) {
-            stupid = true;
-        }
-        //Check if browser is Firefox
-        else if (navigator.userAgent.search("Firefox") & gt = 0) {
-            stupid = false;
-        }
-        //Check if browser is Safari
-        else if (navigator.userAgent.search("Safari") & gt = 0 & amp & amp navigator.userAgent.search("Chrome") & lt 0) {
-            stupid = true;
-        }
-        //Check if browser is Opera
-        else if (navigator.userAgent.search("Opera") & gt = 0) {
-            stupid = false;
-        }
+    let userAgentString =
+        navigator.userAgent;
+
+    // Detect Chrome
+    let chromeAgent =
+        userAgentString.indexOf("Chrome") > -1;
+
+    // Detect Internet Explorer
+    let IExplorerAgent =
+        userAgentString.indexOf("MSIE") > -1 ||
+        userAgentString.indexOf("rv:") > -1;
+
+    if ((chromeAgent) && (IExplorerAgent))
+        chromeAgent = false;
+
+    // Detect Firefox
+    let firefoxAgent =
+        userAgentString.indexOf("Firefox") > -1;
+
+    // Detect Safari
+    let safariAgent =
+        userAgentString.indexOf("Safari") > -1;
+
+    // Discard Safari since it also matches Chrome
+    if ((chromeAgent) && (safariAgent))
+        safariAgent = false;
+
+    // Detect Opera
+    let operaAgent =
+        userAgentString.indexOf("OP") > -1;
+
+    // Discard Chrome since it also matches Opera
+    if ((chromeAgent) && (operaAgent))
+        chromeAgent = false;
+
+    if (chromeAgent) {
+        stupid = true;
+    } else if (firefoxAgent) {
+        stupid = false;
+    } else if (safariAgent) {
+        stupid = true;
+    } else if (operaAgent) {
+        stupid = false;
+    } else if (IExplorerAgent) {
+        stupid = true;
     }
 
     if ($( window ).width() < 1201) {
